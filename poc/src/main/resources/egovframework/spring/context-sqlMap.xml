@@ -9,7 +9,7 @@
 	</bean>
 	
 	<bean id="hiraImSqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
-		<property name="configLocation" value="classpath:/egovframework/sqlmap/**/*.xml"/>
+		<property name="configLocation" value="classpath:/egovframework/sqlmap/im/hiraim-*.xml"/>
 		<property name="dataSource" ref="hiraim"/>
 	</bean>
 
