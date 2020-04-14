@@ -8,8 +8,14 @@
 	<jdbc:embedded-database id="dataSource" type="HSQL">
 		<jdbc:script location= "classpath:/db/sampledb.sql"/>
 	</jdbc:embedded-database>
-     
-     
+    
+    <!-- postgresql DB -->  
+	<bean id="hiraim" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="org.postgresql.Driver"/>
+		<property name="url" value="jdbc:postgresql://49.50.163.212:32005/hiraimdb" />
+		<property name="username" value="postgres"/>
+		<property name="password" value="postgres"/>
+    </bean> 
     <!-- hsql (테스트용 메모리 DB)
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="net.sf.log4jdbc.DriverSpy"/>
