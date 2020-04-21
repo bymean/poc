@@ -1,0 +1,12 @@
+/*header*/
+.search-form{position:absolute; margin-top:2px; right:47%;}
+.c-program-ul li a{-ms-background-size:45px;}
+.notice-list li a .p-new{-ms-background-size:28px;}
+select.form-control{background-image:none;}
+@media (max-width: 1200px) {
+	.search-form{right:55%;}
+}
+@media (max-width: 869px) {
+	.search-form{right:auto; right:66%;}
+	.lnb-bottom{padding:72px 14px 23px 15px;}
+}

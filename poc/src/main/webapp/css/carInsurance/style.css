@@ -1,0 +1,766 @@
+@import url('base.css');
+
+body{font-size:14px; font-family:'nb'; background:#efefef; min-width:1200px; position:relative;}
+.container{width:1200px; margin:0 auto; max-width:none !important;}
+/*header*/
+
+.header{background: url('../../images/carInsurance/head_bg.png') right 74px no-repeat, url('../../images/carInsurance/ptn_bg.gif') 0 0 repeat;}
+.h1_logo{padding-top:20px;}
+
+.h-title{font-size:65px; font-weight:bold; letter-spacing:-5px; font-family:'10X10'; line-height:1; padding:60px 0 200px; color:#283150;}
+.h-title span{font-size:45px;}
+.gnbWrap{background:#475578; position:relative; z-index:9999;}
+.gnb-ul{height:150px;}
+.gnb-ul li{width:33.3%;}
+.gnb-ul li a{display:block; font-family:'10X10'; font-weight:bold; color:#FFFFFF; /*2017.06.23 수정*/ padding:61.5px 0; white-space:nowrap; font-size:26px; text-align:center; }
+.gnb_ico{position:relative;}
+.gIco_01{position:absolute; top:-195px; left:37px;}
+.bubble{width:198px; height:216px; position:absolute; top:-240px; right:35px; font-family:'nb',sans-serif; font-size:14px; color:#16243f; text-align:center; font-weight:600; z-index:99;
+		background: url('../../images/carInsurance/menu_bg.png') right 0 no-repeat; opacity:0; -webkit-transition: opacity .3s ease-out;  -o-transition: opacity .3s ease-out; transition:opacity .3s ease-out; }
+.bubble p{line-height:1.7; padding:90px 0; font-weight:600;}
+.bb01 p{ background:url('../../images/carInsurance/mn01_ico.png') 50% 32px no-repeat;}
+.bb02 p{ background:url('../../images/carInsurance/mn02_ico.png') 50% 32px no-repeat;}
+.bb03 p{ background:url('../../images/carInsurance/mn03_ico.png') 50% 32px no-repeat;}
+
+.gnb-ul li a:hover,.gnb-ul li.active a{background:#283150; color:#ff7a5a;}
+.gnb-ul li a:hover .bubble,.gnb-ul li.active .bubble { opacity:1; }
+
+.h-title01,.h-title02,.h-title03{display:none;}
+.body1 .h-title01{display:block;}
+.body2 .h-title02{display:block;}
+.body3 .h-title03{display:block;}
+.body1 .header{background:url('../../images/carInsurance/head_bg_01.png') right 74px no-repeat, url('../../images/carInsurance/ptn_bg_purple.gif') 0 0 repeat;}
+.body3 .header{background:url('../../images/carInsurance/head_bg_03.png') right 74px no-repeat, url('../../images/carInsurance/ptn_bg_blue.gif') 0 0 repeat;}
+.body1 .gnb-ul li a:hover,.body1 .gnb-ul li.active a{color:#6c9dff;}
+.body2 .gnb-ul li a:hover,.body2 .gnb-ul li.active a{color:#ff7a5a;}
+.body3 .gnb-ul li a:hover,.body3 .gnb-ul li.active a{color:#00dde7;}
+.body3 .h-title03{display:block;}
+
+/*S: 유진*/
+.header .obj_grp {position: absolute; width: 1100px; height: 290px; top: 56px; right: 4%;}
+.header .obj_grp .obj_01 {position: absolute; left: 300px;}
+.header .obj_grp .obj_02 {position: absolute; bottom: 3px; z-index: 10; animation: dayNight01  25s linear infinite;}
+.header .obj_grp .obj_03 {position: absolute; bottom: 25px; animation: dayNight02  22s ease-out infinite;}
+.header .obj_grp .obj_04 {position: absolute; bottom: 3px; z-index: 10; animation: dayNight01  20s linear infinite;}
+.header .obj_grp .obj_05 {position: absolute; bottom: 3px; z-index: 10; animation:dayNight01  15s ease-out infinite;}
+.header .obj_grp .obj_06 {position: absolute; bottom: 25px; animation:dayNight02  15s ease-in infinite;}
+.header .obj_grp .obj_07 {position: absolute; bottom: 25px; animation:dayNight02  13s ease-out infinite;}
+@keyframes dayNight01 {
+    0%{right: 0%;} 
+    100%{right: 100%;} 
+}
+@keyframes dayNight02 {
+    0%{left: 0%;} 
+    100%{left: 100%;} 
+}
+/*E: 유진*/
+
+/*footer*/
+#backtotop {cursor : pointer; display : none; margin : 0% 0% 0% 95%; position : fixed; bottom : 35px; width : 70px; height:70px; text-align : center; vertical-align:middle; z-index : 1000;}
+.footer{background:#3d4c5c; padding:35px 0 28px; overflow:hidden; font-family:'nb',sans-serif; clear:both;}
+.footer-logo{width:170px; float:left;}
+.footer-info{width:696px; float:left; padding:15px 30px 0;}
+.footer-link a{font-size:13px; color:#bfc2c8; display:inline-block; border-left:1px solid #bfc2c8; padding:0 5px; margin-bottom:10px;}
+.footer-link a:first-child{border-left:0; padding-left:0;}
+.footer-info address{margin-top:15px; color:#bfc2c8; background:url('../../images/carInsurance/footer/renew_icon_footer_address.png') no-repeat 0 1px; font-size:12px; padding-left:22px; line-height:24px;}
+.footer-info .footer-copyright{margin-top:5px; font-size:12px; line-height:18px; color:#7b828e;}
+.footer-menu{width:272px; float:right; margin-top:6px; padding:6px 0 11px 0; border-left:1px solid #4b5968; text-align:right; }
+.footer-service-num{color:#bfc2c8; line-height:24px; padding-right:5px;}
+.footer-service-num > span{margin-left:10px; font-size:24px; font-weight:700; vertical-align:sub;}
+.footer-menu .certification-icon{margin-top:29px; font-size:0; line-height:0; text-align:right; padding-right:5px;}
+.footer-menu .certification-icon img{margin-left:12px;}
+/*contents2*/
+.contents2_nav{border-bottom:1px solid #c5b6a9;   font-family:'nb', sans-serif; font-weight:bold;}
+.f-nav{z-index:9999; position:fixed; left:0; top:0; width:100%; background:#efefef;}
+.contents2_nav ul{overflow:hidden; margin:0 auto; width:1010px; font-size:21px;}
+.contents2_nav ul li{width:202px;}
+.contents2_nav ul li a{display:block; color:#313131; padding:20px 0 15px; text-align:center; background:url('../../images/carInsurance/subGnb.gif') 0 50% no-repeat;}
+.contents2_nav ul li:first-child a{background:none;}
+.contents2_nav ul li a.Active,.contents2_nav ul li a.on{color:#16243f; border-bottom:5px solid #283150;}
+
+.tt_h2{font-family:'10X10'; color:#283150; font-size:45px; font-weight:bold;/* padding-top:60px;*/
+background:url('../../images/carInsurance/ct_bg.png') 0 bottom repeat-x; padding-bottom:30px; padding-top:60px;  letter-spacing:-1px;}
+.tt_h3{font-family:'nb',sans-serif; font-size:27px; color:#283150; letter-spacing:-1px; margin-bottom:40px; font-weight:400;}
+.tt_h3 strong{font-weight:bold;}
+.ct2_wrap{background-color:#ffffff; padding:60px 0; border-bottom:3px dashed #dde0e6; }
+.ct2_wrap.no-bd{border-bottom:0;}
+/*contents2 사고 지역*/
+.mapChart{position:relative; background:url('../../images/carInsurance/ct2/map/map_bg.gif') 50% 50% no-repeat; height:710px; width:510px; margin:65px auto 0;}
+.city{color:#ffffff; font-family:'nb',sans-serif; position:absolute;}
+.cityText{padding:6.5px 15px; display:table; font-size:17px; font-weight:bold; height:21px; background:#6f85ac; border-radius:15px;}
+.city .rank{font-family:'roboto',sans-serif; font-size:18px; display:table-cell; padding-right:12px;}
+.city .rank span{font-size:17px;}
+.city .yellow{font-family:'roboto',sans-serif; font-size:19px; display:table-cell; line-height:0.75; font-weight:600; padding-left:5px;}
+.chart-caption{margin-right:80px; color:#757575; font-size:14px;}
+.pin_rk .pin_rk01,.pin_rk .pin_rk02,.pin_rk .pin_rk03{display:none; position:absolute; bottom:0;}
+.rank01 .rank,.rank02 .rank,.rank03 .rank{display:none;}
+.rank01 .cityText,.rank02 .cityText,.rank03 .cityText{background:none;}
+/*경기*/
+.city1{ top:164px; left:-114px;}
+.city1_bg{background:url('../../images/carInsurance/ct2/map/gyeongi.gif') 0 0 no-repeat; width:288px; height:55px;}
+.city1.rank01 .pin_rk .pin_rk01,.city1.rank02 .pin_rk .pin_rk02,.city1.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city1_bg{background:url('../../images/carInsurance/ct2/map/gyeongi_rk01.gif') 0 0 no-repeat; position:absolute; width:320px; height:85px; top:-26px; left:-53px; }
+.rank02 .city1_bg{background:url('../../images/carInsurance/ct2/map/gyeongi_rk02.gif') 0 0 no-repeat; position:absolute; width:320px; height:85px; top:-26px; left:-53px; }
+.rank03 .city1_bg{background:url('../../images/carInsurance/ct2/map/gyeongi_rk03.gif') 0 0 no-repeat; position:absolute; width:320px; height:85px; top:-26px; left:-53px; }
+.city1.rank01 .cityText,.city1.rank02 .cityText,.city1.rank03 .cityText{position:absolute; left:64px; top:42px; width:115px; padding:0;}
+.city1.rank01 .pin_rk,.city1.rank02 .pin_rk,.city1.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-98px; left:290px; z-index:57;}
+/*서울*/
+.city2{top:0; left:-65px;}
+.city2_bg{background:url('../../images/carInsurance/ct2/map/seoul.gif') 0 0 no-repeat; width:229px; height:168px; top:0; left:-65px; }
+.city2.rank01 .pin_rk .pin_rk01,.city2.rank02 .pin_rk .pin_rk02,.city2.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city2_bg{background:url('../../images/carInsurance/ct2/map/seoul_rk01.gif') 0 0 no-repeat; position:absolute; width:264px; height:198px; top:-26px; left:-30px;}
+.rank02 .city2_bg{background:url('../../images/carInsurance/ct2/map/seoul_rk02.gif') 0 0 no-repeat; position:absolute; width:264px; height:198px; top:-26px; left:-30px;}
+.rank03 .city2_bg{background:url('../../images/carInsurance/ct2/map/seoul_rk03.gif') 0 0 no-repeat; position:absolute; width:264px; height:198px; top:-26px; left:-30px;}
+.city2.rank01 .cityText,.city2.rank02 .cityText,.city2.rank03 .cityText{left:64px; top:40px; width:116px; position:absolute; padding:0;}
+.city2.rank01 .pin_rk,.city2.rank02 .pin_rk,.city2.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:0; left:195px;}
+/*인천*/
+.city3{top:88px; left:-114px;}
+.city3_bg{background:url('../../images/carInsurance/ct2/map/incheon.gif') 0 0 no-repeat; width:249px; height:98px; }
+.city3.rank01 .pin_rk .pin_rk01,.city3.rank02 .pin_rk .pin_rk02,.city3.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city3_bg{background:url('../../images/carInsurance/ct2/map/incheon_rk01.gif') 0 0 no-repeat; position:absolute; width:281px; height:128px; top:-30px; left:-32px;}
+.rank02 .city3_bg{background:url('../../images/carInsurance/ct2/map/incheon_rk02.gif') 0 0 no-repeat; position:absolute; width:281px; height:128px; top:-30px; left:-32px;}
+.rank03 .city3_bg{background:url('../../images/carInsurance/ct2/map/incheon_rk03.gif') 0 0 no-repeat; position:absolute; width:281px; height:128px; top:-30px; left:-32px;}
+.city3.rank01 .cityText,.city3.rank02 .cityText,.city3.rank03 .cityText{left:63px; top:39px; width:116px; position:absolute; padding:0;}
+.city3.rank01 .pin_rk,.city3.rank02 .pin_rk,.city3.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-60px; left:183px;}
+/*세종*/
+.city4{top:245px; left:-140px;}
+.city4_bg{background:url('../../images/carInsurance/ct2/map/sejong.gif') 0 0 no-repeat; width:334px; height:52px; }
+.city4.rank01 .pin_rk .pin_rk01,.city4.rank02 .pin_rk .pin_rk02,.city4.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city4_bg{background:url('../../images/carInsurance/ct2/map/sejong_rk01.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-34px; left:-50px; z-index:55;}
+.rank02 .city4_bg{background:url('../../images/carInsurance/ct2/map/sejong_rk02.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-34px; left:-50px; z-index:55;}
+.rank03 .city4_bg{background:url('../../images/carInsurance/ct2/map/sejong_rk03.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-34px; left:-50px; z-index:55;}
+.city4.rank01 .cityText,.city4.rank02 .cityText,.city4.rank03 .cityText{margin-left:51px; margin-top:37px; width:130px;}
+.city4.rank01 .pin_rk,.city4.rank02 .pin_rk,.city4.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-100px; left:245px; z-index:50;}
+/*충남*/
+.city5{top:330px ; left:-116px;}
+.city5_bg{background:url('../../images/carInsurance/ct2/map/chungnam.gif') 0 0 no-repeat; width:258px; height:35px; }
+.city5.rank01 .pin_rk .pin_rk01,.city5.rank02 .pin_rk .pin_rk02,.city5.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city5_bg{background:url('../../images/carInsurance/ct2/map/chungnam_rk01.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-49px; left:-33px; z-index:57;}
+.rank02 .city5_bg{background:url('../../images/carInsurance/ct2/map/chungnam_rk02.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-49px; left:-33px; z-index:57;}
+.rank03 .city5_bg{background:url('../../images/carInsurance/ct2/map/chungnam_rk03.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-49px; left:-33px; z-index:57;}
+.city5.rank01 .cityText,.city5.rank02 .cityText,.city5.rank03 .cityText{margin-left:33px; margin-top:52px; width:130px;}
+.city5.rank01 .pin_rk,.city5.rank02 .pin_rk,.city5.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-124px; left:171px; z-index:56;}
+/*전북*/
+.city6{top:410px; left:-90px;}
+.city6_bg{background:url('../../images/carInsurance/ct2/map/jeonbuk.gif') 0 0 no-repeat; width:285px; height:34px; }
+.city6.rank01 .pin_rk .pin_rk01,.city6.rank02 .pin_rk .pin_rk02,.city6.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city6_bg{background:url('../../images/carInsurance/ct2/map/jeonbuk_rk01.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-31px; left:-53px; z-index:57;}
+.rank02 .city6_bg{background:url('../../images/carInsurance/ct2/map/jeonbuk_rk02.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-31px; left:-53px; z-index:57;}
+.rank03 .city6_bg{background:url('../../images/carInsurance/ct2/map/jeonbuk_rk03.gif') 0 0 no-repeat; position:absolute; width:385px; height:86px; top:-31px; left:-53px; z-index:57;}
+.city6.rank01 .cityText,.city6.rank02 .cityText,.city6.rank03 .cityText{margin-left:53px; margin-top:35px; width:130px;}
+.city6.rank01 .pin_rk,.city6.rank02 .pin_rk,.city6.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-130px; left:171px; z-index:57;}
+/*광주*/
+.city7{top:470px; left:-105px;}
+.city7_bg .cityText{position:absolute; bottom:0; left:0;}
+.city7_bg{background:url('../../images/carInsurance/ct2/map/gwangju.gif') 0 0 no-repeat; width:252px; height:49px; }
+.city7.rank01 .pin_rk .pin_rk01,.city7.rank02 .pin_rk .pin_rk02,.city7.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city7_bg{background:url('../../images/carInsurance/ct2/map/gwangju_rk01.gif') 0 0 no-repeat; position:absolute; width:303px; height:77px; top:-19px; left:-51px; z-index:57;}
+.rank02 .city7_bg{background:url('../../images/carInsurance/ct2/map/gwangju_rk02.gif') 0 0 no-repeat; position:absolute; width:303px; height:77px; top:-19px; left:-51px; z-index:57;}
+.rank03 .city7_bg{background:url('../../images/carInsurance/ct2/map/gwangju_rk03.gif') 0 0 no-repeat; position:absolute; width:303px; height:77px; top:-19px; left:-51px; z-index:57;}
+.city7.rank01 .cityText,.city7.rank02 .cityText,.city7.rank03 .cityText{margin-left:53px; margin-bottom:6px; width:130px;}
+.city7.rank01 .pin_rk,.city7.rank02 .pin_rk,.city7.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-147px; left:251px; z-index:57;}
+/*전남*/
+.city8{top:553px; left:-102px;}
+.city8_bg .cityText{position:absolute; bottom:2px;}
+.city8_bg{background:url('../../images/carInsurance/ct2/map/jeonnam.gif') 0 0 no-repeat; width:247px; height:49px;}
+.city8.rank01 .pin_rk .pin_rk01,.city8.rank02 .pin_rk .pin_rk02,.city8.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city8_bg{background:url('../../images/carInsurance/ct2/map/jeonnam_rk01.gif') 0 0 no-repeat; position:absolute; width:303px; height:77px; top:-22px; left:-55px; z-index:57;}
+.rank02 .city8_bg{background:url('../../images/carInsurance/ct2/map/jeonnam_rk02.gif') 0 0 no-repeat; position:absolute; width:303px; height:77px; top:-22px; left:-55px; z-index:57;}
+.rank03 .city8_bg{background:url('../../images/carInsurance/ct2/map/jeonnam_rk03.gif') 0 0 no-repeat; position:absolute; width:303px; height:77px; top:-22px; left:-55px; z-index:57;}
+.city8.rank01 .cityText,.city8.rank02 .cityText,.city8.rank03 .cityText{margin-left:53px; margin-bottom:4px; width:130px;}
+.city8.rank01 .pin_rk,.city8.rank02 .pin_rk,.city8.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-145px; left:159px; z-index:57;}
+/*강원*/
+.city9{top:-25px; right:29px;}
+.city9 .cityText{margin-left:12px;}
+.city9_bg{background:url('../../images/carInsurance/ct2/map/gangwon.gif') 0 0 no-repeat; width:200px; height:141px; }
+.city9.rank01 .pin_rk .pin_rk01,.city9.rank02 .pin_rk .pin_rk02,.city9.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city9_bg{background:url('../../images/carInsurance/ct2/map/gangwon_rk01.gif') 0 0 no-repeat; position:absolute; width:212px; height:174px; top:-33px; right:15px; z-index:57;}
+.rank02 .city9_bg{background:url('../../images/carInsurance/ct2/map/gangwon_rk02.gif') 0 0 no-repeat; position:absolute; width:212px; height:174px; top:-33px; right:15px; z-index:57;}
+.rank03 .city9_bg{background:url('../../images/carInsurance/ct2/map/gangwon_rk03.gif') 0 0 no-repeat; position:absolute; width:212px; height:174px; top:-33px; right:15px; z-index:57;}
+.city9.rank01 .cityText,.city9.rank02 .cityText,.city9.rank03 .cityText{position:absolute; right:0; margin-top:36px; width:130px;}
+.city9.rank01 .pin_rk,.city9.rank02 .pin_rk,.city9.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-17px; right:191px; z-index:55;}
+.city9.rank01 .pin_rk img,.city9.rank02 .pin_rk img,.city9.rank03 .pin_rk img{margin:0 auto;} 
+/*충북*/
+.city10{top:60px; right:-27px;}
+.city10 .cityText{position:absolute; right:0;}
+.city10_bg{background:url('../../images/carInsurance/ct2/map/chungbuk.gif') 0 0 no-repeat; width:241px; height:179px; }
+.city10.rank01 .pin_rk .pin_rk01,.city10.rank02 .pin_rk .pin_rk02,.city10.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city10_bg{background:url('../../images/carInsurance/ct2/map/chungbuk_rk01.gif') 0 0 no-repeat; position:absolute; width:241px; height:210px; top:-31px; right:0px; z-index:57;}
+.rank02 .city10_bg{background:url('../../images/carInsurance/ct2/map/chungbuk_rk02.gif') 0 0 no-repeat; position:absolute; width:241px; height:210px; top:-31px; right:0px; z-index:57;}
+.rank03 .city10_bg{background:url('../../images/carInsurance/ct2/map/chungbuk_rk03.gif') 0 0 no-repeat; position:absolute; width:241px; height:210px; top:-31px; right:0px; z-index:57;}
+.city10.rank01 .cityText,.city10.rank02 .cityText,.city10.rank03 .cityText{margin-left:81px; margin-top:34px; width:130px;}
+.city10.rank01 .pin_rk,.city10.rank02 .pin_rk,.city10.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-8px; right:165px; z-index:56;}
+.city10.rank01 .pin_rk img,.city10.rank02 .pin_rk img,.city10.rank03 .pin_rk img{margin:0 auto;} 
+/*경북*/
+.city11{top:140px; right:-90px;}
+.city11 .cityText{position:absolute; right:0;}
+.city11_bg{background:url('../../images/carInsurance/ct2/map/gyeongbuk.gif') 0 0 no-repeat; width:224px; height:123px; }
+.city11.rank01 .pin_rk .pin_rk01,.city11.rank02 .pin_rk .pin_rk02,.city11.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city11_bg{background:url('../../images/carInsurance/ct2/map/gyeongbuk_rk01.gif') 0 0 no-repeat; position:absolute; width:224px; height:158px; top:-36px; right:-1px; z-index:57;}
+.rank02 .city11_bg{background:url('../../images/carInsurance/ct2/map/gyeongbuk_rk02.gif') 0 0 no-repeat; position:absolute; width:224px; height:158px; top:-36px; right:-1px; z-index:57;}
+.rank03 .city11_bg{background:url('../../images/carInsurance/ct2/map/gyeongbuk_rk03.gif') 0 0 no-repeat; position:absolute; width:224px; height:158px; top:-36px; right:-1px; z-index:57;}
+.city11.rank01 .cityText,.city11.rank02 .cityText,.city11.rank03 .cityText{margin-left:64px; margin-top:38px; width:130px;}
+.city11.rank01 .pin_rk,.city11.rank02 .pin_rk,.city11.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-41px; right:165px; z-index:57;}
+.city11.rank01 .pin_rk img,.city11.rank02 .pin_rk img,.city11.rank03 .pin_rk img{margin:0 auto;} 
+/*대전*/
+.city12{top:224px; right:-117px;}
+.city12 .cityText{float:right;}
+.city12_bg{background:url('../../images/carInsurance/ct2/map/daejeon.gif') 0 0 no-repeat; width:422px; height:119px; }
+.city12.rank01 .pin_rk .pin_rk01,.city12.rank02 .pin_rk .pin_rk02,.city12.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city12_bg{background:url('../../images/carInsurance/ct2/map/daejeon_rk01.gif') 0 0 no-repeat; position:absolute; width:422px; height:154px; top:-36px; right:-1px; z-index:57;}
+.rank02 .city12_bg{background:url('../../images/carInsurance/ct2/map/daejeon_rk02.gif') 0 0 no-repeat; position:absolute; width:422px; height:154px; top:-36px; right:-1px; z-index:57;}
+.rank03 .city12_bg{background:url('../../images/carInsurance/ct2/map/daejeon_rk03.gif') 0 0 no-repeat; position:absolute; width:422px; height:154px; top:-36px; right:-1px; z-index:57;}
+.city12.rank01 .cityText,.city12.rank02 .cityText,.city12.rank03 .cityText{margin-right:0; margin-top:39px; width:130px;}
+.city12.rank01 .pin_rk,.city12.rank02 .pin_rk,.city12.rank03 .pin_rk{width:103px; height:158px; position:absolute; top:-53px; left:-427px; z-index:57;}
+/*대구*/
+.city13{top:303px; right:-132px;}
+.city13 .cityText{float:right;}
+.city13_bg{background:url('../../images/carInsurance/ct2/map/daegu.gif') 0 0 no-repeat; width:307px; height:121px; }
+.city13.rank01 .pin_rk .pin_rk01,.city13.rank02 .pin_rk .pin_rk02,.city13.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city13_bg{background:url('../../images/carInsurance/ct2/map/daegu_rk01.gif') 0 0 no-repeat; position:absolute; width:307px; height:155px; top:-34px; right:1px; z-index:57;}
+.rank02 .city13_bg{background:url('../../images/carInsurance/ct2/map/daegu_rk02.gif') 0 0 no-repeat; position:absolute; width:307px; height:155px; top:-34px; right:1px; z-index:57;}
+.rank03 .city13_bg{background:url('../../images/carInsurance/ct2/map/daegu_rk03.gif') 0 0 no-repeat; position:absolute; width:307px; height:155px; top:-34px; right:1px; z-index:57;}
+.city13.rank01 .cityText,.city13.rank02 .cityText,.city13.rank03 .cityText{margin-right:0; margin-top:37px; width:130px;}
+.city13.rank01 .pin_rk,.city13.rank02 .pin_rk,.city13.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-70px; right:248px; z-index:57;}
+.city13.rank01 .pin_rk img,.city13.rank02 .pin_rk img,.city13.rank03 .pin_rk img{margin:0 auto;} 
+/*울산*/
+.city14{top:385px; right:-125px;}
+.city14 .cityText{float:right;}
+.city14_bg{background:url('../../images/carInsurance/ct2/map/ulsan.gif') 0 0 no-repeat; width:219px; height:61px; }
+.city14.rank01 .pin_rk .pin_rk01,.city14.rank02 .pin_rk .pin_rk02,.city14.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city14_bg{background:url('../../images/carInsurance/ct2/map/ulsan_rk01.gif') 0 0 no-repeat; position:absolute; width:219px; height:96px; top:-34px; right:2px; z-index:57;}
+.rank02 .city14_bg{background:url('../../images/carInsurance/ct2/map/ulsan_rk02.gif') 0 0 no-repeat; position:absolute; width:219px; height:96px; top:-34px; right:2px; z-index:57;}
+.rank03 .city14_bg{background:url('../../images/carInsurance/ct2/map/ulsan_rk03.gif') 0 0 no-repeat; position:absolute; width:219px; height:96px; top:-34px; right:2px; z-index:57;}
+.city14.rank01 .cityText,.city14.rank02 .cityText,.city14.rank03 .cityText{margin-right:0; margin-top:39px; width:130px;}
+.city14.rank01 .pin_rk,.city14.rank02 .pin_rk,.city14.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-109px; right:168px; z-index:57;}
+.city14.rank01 .pin_rk img,.city14.rank02 .pin_rk img,.city14.rank03 .pin_rk img{margin:0 auto;} 
+/*부산*/
+.city15{top:466px; right:-95px;}
+.city15 .cityText{float:right; margin-right:5px;}
+.city15_bg{background:url('../../images/carInsurance/ct2/map/busan.gif') 0 0 no-repeat; width:216px; height:61px; }
+.city15.rank01 .pin_rk .pin_rk01,.city15.rank02 .pin_rk .pin_rk02,.city15.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city15_bg{background:url('../../images/carInsurance/ct2/map/busan_rk01.gif') 0 0 no-repeat; position:absolute; width:215px; height:77px; top:-34px; right:3px; z-index:57;}
+.rank02 .city15_bg{background:url('../../images/carInsurance/ct2/map/busan_rk02.gif') 0 0 no-repeat; position:absolute; width:215px; height:77px; top:-34px; right:3px; z-index:57;}
+.rank03 .city15_bg{background:url('../../images/carInsurance/ct2/map/busan_rk03.gif') 0 0 no-repeat; position:absolute; width:215px; height:77px; top:-34px; right:3px; z-index:57;}
+.city15.rank01 .cityText,.city15.rank02 .cityText,.city15.rank03 .cityText{margin-right:0; margin-top:36px; width:130px;}
+.city15.rank01 .pin_rk,.city15.rank02 .pin_rk,.city15.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-120px; right:217px; z-index:57;}
+.city15.rank01 .pin_rk img,.city15.rank02 .pin_rk img,.city15.rank03 .pin_rk img{margin:0 auto;} 
+/*경남*/
+.city16{top:489px; right:25px;}
+.city16 .cityText{float:right; margin-top:58px;}
+.city16_bg{background:url('../../images/carInsurance/ct2/map/gyeongnam.gif') 0 0 no-repeat; width:208px; height:92px; }
+.city16.rank01 .pin_rk .pin_rk01,.city16.rank02 .pin_rk .pin_rk02,.city16.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city16_bg{background:url('../../images/carInsurance/ct2/map/gyeongnam_rk01.gif') 0 0 no-repeat; position:absolute; width:208px; height:99px; top:0; right:0; z-index:57;}
+.rank02 .city16_bg{background:url('../../images/carInsurance/ct2/map/gyeongnam_rk02.gif') 0 0 no-repeat; position:absolute; width:208px; height:99px; top:0; right:0; z-index:57;}
+.rank03 .city16_bg{background:url('../../images/carInsurance/ct2/map/gyeongnam_rk03.gif') 0 0 no-repeat; position:absolute; width:208px; height:99px; top:0; right:0; z-index:57;}
+.city16.rank01 .cityText,.city16.rank02 .cityText,.city16.rank03 .cityText{margin-right:0px; margin-top:61px; width:130px;}
+.city16.rank01 .pin_rk,.city16.rank02 .pin_rk,.city16.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-159px; right:167px; z-index:57;}
+.city16.rank01 .pin_rk img,.city16.rank02 .pin_rk img,.city16.rank03 .pin_rk img{margin:0 auto;} 
+/*제주*/
+.city17{top:650px; left:-95px;}
+.city17_bg{background:url('../../images/carInsurance/ct2/map/jeju.gif') 0 0 no-repeat; width:217px; height:34px;}
+.city17.rank01 .pin_rk .pin_rk01,.city17.rank02 .pin_rk .pin_rk02,.city17.rank03 .pin_rk .pin_rk03{display:block;}
+.rank01 .city17_bg{background:url('../../images/carInsurance/ct2/map/jeju_rk01.gif') 0 0 no-repeat; position:absolute; width:266px; height:77px; top:-33px; left:-48px; z-index:57;}
+.rank02 .city17_bg{background:url('../../images/carInsurance/ct2/map/jeju_rk02.gif') 0 0 no-repeat; position:absolute; width:266px; height:77px; top:-33px; left:-48px; z-index:57;}
+.rank03 .city17_bg{background:url('../../images/carInsurance/ct2/map/jeju_rk03.gif') 0 0 no-repeat; position:absolute; width:266px; height:77px; top:-33px; left:-48px; z-index:57;}
+.city17.rank01 .cityText,.city17.rank02 .cityText,.city17.rank03 .cityText{margin-left:50px; margin-top:36px; width:130px;}
+.city17.rank01 .pin_rk,.city17.rank02 .pin_rk,.city17.rank03 .pin_rk {width:103px; height:158px; position:absolute; top:-138px; left:220px; z-index:57;}
+.city17.rank01 .pin_rk img,.city17.rank02 .pin_rk img,.city17.rank03 .pin_rk img{margin:0 auto;} 
+
+/*연령대*/
+.ageChart{width:880px; margin:200px auto 0;}
+.ageChart .chart-caption{margin-top:53px;}
+
+.ageChart_ul .ageC{position:relative; width:103px; height:100%; display:inline-block; bottom:0;}
+.age_bar{background:url('../../images/carInsurance/ct2/chBg.gif') 0 0 repeat; width:90px; min-height:40px; position:absolute; bottom:0;}
+.ageChart_ul{ font-family:'roboto',sans-serif; font-weight:600; text-align:center; font-size:19px;height:210px;}
+.ageChart_ul .label{text-align:center; color:#283150; position:absolute; bottom:-25px; width:100%;}
+.ageC_0 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_01_1.png') 0 bottom no-repeat; padding-bottom:33px; margin-top:-123px; position:relative;}
+.ageText{position:absolute; background:url('../../images/carInsurance/ct2/age/fgBg.png') 0 bottom no-repeat; width:103px; height:58px; top:-47px; left:50%; margin-left:-51.5px; line-height:1.75;}
+
+.rank01 .age_bar{background:url('../../images/carInsurance/ct2/chBg_rk01.gif') 0 0 repeat; }
+.rank01.ageC_0 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_01_rk01.png') 0 bottom no-repeat;}
+.rank01 .ageText{background:url('../../images/carInsurance/ct2/age/fgBg_rk01.png') 0 bottom no-repeat;}
+.rank02 .age_bar{background:url('../../images/carInsurance/ct2/chBg_rk02.gif') 0 0 repeat; }
+.rank02.ageC_0 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_01_rk02.png') 0 bottom no-repeat;}
+.rank02 .ageText{background:url('../../images/carInsurance/ct2/age/fgBg_rk02.png') 0 bottom no-repeat;}
+.rank03 .age_bar{background:url('../../images/carInsurance/ct2/chBg_rk03.gif') 0 0 repeat; }
+.rank03.ageC_0 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_01_rk03.png') 0 bottom no-repeat;}
+.rank03 .ageText{background:url('../../images/carInsurance/ct2/age/fgBg_rk03.png') 0 bottom no-repeat;}
+
+.ageC_1 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_bd.png') 0 bottom no-repeat; padding-bottom:33px; margin-top:-123px; position:relative;}
+
+.rank01.ageC_1 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_bd_rk01.png') 0 bottom no-repeat;}
+.rank02.ageC_1 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_bd_rk02.png') 0 bottom no-repeat;}
+.rank03.ageC_1 .pin01_rk{background:url('../../images/carInsurance/ct2/age/age_bd_rk03.png') 0 bottom no-repeat;}
+
+/*입원/외래별 환자 수*/
+.ptChart{overflow:hidden; padding:0 80px 30px; white-space:nowrap;}
+.pt_inner{background:url('../../images/carInsurance/ct2/pt/inner_bg.png') center 0 no-repeat; color:rgba(0,0,0,0); width:45%; height:210px; display:inline-block; float:left; background-size:contain;}
+.pt_outer{background:url('../../images/carInsurance/ct2/pt/outer_bg.png') center 0 no-repeat; color:rgba(0,0,0,0); width:45%; height:210px; display:inline-block; float:right; background-size:contain;}
+.ptChart .arrow{width:10%; margin:60px auto; display:inline-block; text-align:center; position:absolute; left:50%; margin-left:-5%;}
+.ptLeft{color:rgba(255,255,255,0); background:url('../../images/carInsurance/ct2/pt/left.gif') center 0 no-repeat; height:75px;}
+.ptRight{color:rgba(255,255,255,0); background:url('../../images/carInsurance/ct2/pt/right.gif') center 0 no-repeat; height:75px;}
+.pt_innerC{width:45%; display:inline-block; float:left;}
+.pt_outerC{width:45%; display:inline-block; float:right;}
+.ptChart_ul .ptC{position:relative; width:103px; height:100%; display:inline-block; bottom:0;}
+.ptC_0 .pt_bar{background:url('../../images/carInsurance/ct2/chBg.gif') 0 0 repeat; width:90px; min-height:20px; position:absolute; bottom:0;}
+.ptC_1 .pt_bar{background:url('../../images/carInsurance/ct2/chBg_blue.gif') 0 0 repeat; width:90px; min-height:20px; position:absolute; bottom:0;}
+.ptC_2 .pt_bar{background:url('../../images/carInsurance/ct2/chBg_dblue.gif') 0 0 repeat; width:90px; min-height:20px; position:absolute; bottom:0;}
+.ptChart_ul{ font-family:'roboto',sans-serif; font-weight:600; text-align:center; font-size:19px; height:270px; padding-top:55px;}
+.ptChart_ul .label{text-align:center; color:#6f85ac; position:absolute; bottom:-25px; width:100%;}
+.ptText{position:absolute; background:url('../../images/carInsurance/ct2/age/fgBg.png') 0 bottom no-repeat; width:103px; height:58px; top:-53px; left:50%; margin-left:-51.5px; line-height:1.75;}
+.ptC_1 .ptText{background:url('../../images/carInsurance/ct2/fgBg_blue.png') 0 bottom no-repeat;}
+.ptC_2 .ptText{background:url('../../images/carInsurance/ct2/fgBg_dblue.png') 0 bottom no-repeat;}
+.ptChart_ul .label{color:#6f85ac; position:absolute; width:100%; bottom:-30px;}
+.ptC_1 .label{color:#475578;}
+.ptC_2 .label{color:#283150;}
+
+/*계절*/
+.ssChart{padding:0 80px; position:relative;}
+.ssChart .chart-caption{margin-right:0;}
+.ssChart_ul{height:436px;}
+.ssC_Bg{position:absolute; bottom:0; text-align:center;}
+.ssC{width:25%; display:inline-block; float:left; position:relative;}
+.ssC .label{background:url('../../images/carInsurance/ct2/season/ssBg.png') left top no-repeat; width:123px; height:132px; padding-top:28px; text-align:center; font-size:17px; color:#ffffff; font-weight:600;}
+.ssC.rank01 .label{background:url('../../images/carInsurance/ct2/season/ssBg_rk01.png') left top no-repeat;}
+.ssC .label .roboto{font-size:16px; display:block; margin-top:5px;}
+.ssText{font-size:20px; color:#fffed5; font-family:'roboto',sans-serif; margin-top:10px;}
+.ssc_imgWrap{position:absolute; width:100%; bottom:-76px;}
+.ssMotion{position:relative; text-align:center; height:235px;}
+
+@keyframes spring1 { /*작은 잎*/
+	0%{width:0px; left:115px; opacity:0;} 
+    10%{width:0px; left:115px; opacity:0;} 
+  	15%{width:40px; left:87px; bottom:40px; opacity:0.8;}
+  	18%{width:32px; left:87px; bottom:40px;opacity:1;}
+  	100%{width:32px; left:87px; bottom:40px;opacity:1;}
+}
+@keyframes spring2 {/*작은 줄기*/
+    0%{opacity:0; bottom:0;} 
+    10%{opacity:1; bottom:19px;}
+    100%{opacity:1; bottom:19px;} 
+}
+@keyframes spring3 {/*꽃*/
+    0%{-webkit-transform:translate(43,113); -webkit-transform:scale(0); transform:scale(0); -webkit-transform:rotate(30deg);-ms-transform:rotate(30deg); transform:rotate(30deg); }
+   	1%{ -webkit-transform:scale(0.6); transform:scale(0.6);}
+   	20%/*6%*/{-webkit-transform:scale(1);/*width:74px; */-webkit-transform:translate(25,95);/*right:25px; bottom:95px;*/	-webkit-transform:rotate(60deg); -ms-transform:rotate(60deg); transform:rotate(60deg); }
+   	25%/*7%*/{-webkit-transform:rotate(90deg); transform:rotate(90deg); -webkit-transform:scale(1);}
+   	
+}
+@keyframes summer1 {/*비치볼*/
+    0%{opacity:0; bottom:100px; left:82px;}  
+    26%{opacity:0;-webkit-transform:rotate(180deg); -ms-transform:rotate(180deg); transform:rotate(180deg);} 
+    28%{opacity:1;}
+    29%{bottom:45px;}
+    31%{bottom:-15px;}   
+    33%{bottom:37px;}
+    35%{bottom:-15px;}   
+    37%{bottom:30px;}
+    39%{bottom:-15px;}   
+    41%{bottom:28px;}
+    43%{bottom:-15px;}
+    45%{bottom:15px;}
+    47%{bottom:-15px; left:82px;}
+    50%{bottom:-15px; left:72px; -webkit-transform:rotate(0deg);	-ms-transform:rotate(0deg); transform:rotate(0deg);}
+    100%{bottom:-15px; left:72px; -webkit-transform:rotate(0deg);	-ms-transform:rotate(0deg); transform:rotate(0deg);}
+}
+
+@keyframes fall1 {/*벼*/
+    0%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+    49%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+    50%{-webkit-transform:rotate(5deg); transform:rotate(5deg); -ms-transform:rotate(5deg);}
+    60%{-webkit-transform:rotate(-5deg); transform:rotate(-5deg); -ms-transform:rotate(-5deg);}
+    70%{-webkit-transform:rotate(3deg); transform:rotate(3deg); -ms-transform:rotate(3deg);}
+    75%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+}
+
+@keyframes fall1_sub{
+	0%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg); opacity:0;}
+	49%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+  	50%{-webkit-transform:rotate(5deg); transform:rotate(5deg); -ms-transform:rotate(5deg); opacity:0;}
+  	51%{opacity:1;}
+  	56%{opacity:1;}
+  	57%{opacity:0;}
+  	60%{-webkit-transform:rotate(-5deg); transform:rotate(-5deg); -ms-transform:rotate(-5deg);}
+  	65%{opacity:0;}
+  	66%{opacity:1;}
+  	70%{-webkit-transform:rotate(3deg); transform:rotate(3deg); -ms-transform:rotate(3deg); opacity:1;}
+  	71%{opacity:0;}
+  	75%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg); opacity:0;}
+  	76%{opacity:1;}
+  	78%{opacity:0;}
+    100%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg); opacity:0;}	  
+	
+}
+@keyframes f_eyes {/*눈 깜빡임*/
+    0% {opacity:1;}
+  	50%{opacity:1;}
+  	51%{opacity:0;}
+  	56%{opacity:0;}
+  	57%{opacity:1;}
+  	65%{opacity:1;}
+  	66%{opacity:0;}
+  	70%{opacity:0;}
+  	71%{opacity:1;}
+  	75%{opacity:1;}
+  	76%{opacity:0;}
+  	78%{opacity:1;}
+    100%{opacity:1;}	  		  		  		  	  
+}
+@keyframes f_eyes_sub {/*눈 깜빡임*/
+   	0%{opacity:0;}
+  	50%{opacity:0;}
+  	51%{opacity:1;}
+  	56%{opacity:1;}
+  	57%{opacity:0;}
+  	65%{opacity:0;}
+  	66%{opacity:1;}
+  	70%{opacity:1;}
+  	71%{opacity:0;}
+  	75%{opacity:0;}
+  	76%{opacity:1;}
+  	78%{opacity:0;}
+    100%{opacity:0;}	  	  	  
+}
+@keyframes winter1 {/*눈송이*/
+    0%{opacity:0;}
+    70%{opacity:0; top:0; left:80%;-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+    80%{left:100px; top:50px; opacity:0.5;}
+    90%{left:80%; top:170px; opacity:1;}
+    /*80%{left:100px; top:230px; opacity:0; -webkit-transform:rotate(360deg); transform:rotate(360deg); -ms-transform:rotate(360deg);}*/
+    100%{left:100px; top:220px; opacity:0; -webkit-transform:rotate(360deg); transform:rotate(360deg); -ms-transform:rotate(360deg);}	  		  		  		  	  
+}
+
+@keyframes winter2 {/*눈사람 팔(왼)*/
+    0%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+    70%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+  	80%{-webkit-transform:rotate(15deg); transform:rotate(-15deg); -ms-transform:rotate(15deg);}
+  	90%{-webkit-transform:rotate(-15deg); transform:rotate(-15deg); -ms-transform:rotate(-15deg);}	 		 	 
+    100%{-webkit-transform:rotate(15deg); transform:rotate(15deg); -ms-transform:rotate(15deg);}	  		  		  		  	  
+}
+@keyframes winter3 {/*눈사람 팔(오)*/
+    0%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+    70%{-webkit-transform:rotate(0deg); transform:rotate(0deg); -ms-transform:rotate(0deg);}
+  	80%{-webkit-transform:rotate(-15deg); transform:rotate(-15deg); -ms-transform:rotate(-15deg);}
+  	90%{-webkit-transform:rotate(15deg); transform:rotate(15deg); -ms-transform:rotate(15deg);}	 		 	 
+    100%{-webkit-transform:rotate(-15deg); transform:rotate(-15deg); -ms-transform:rotate(-15deg);}	  			  		  	  
+}
+
+@keyframes eyes {/*눈 깜빡임*/
+    0%{opacity:1;}
+  	70%{opacity:1;}
+  	71%{opacity:0;}
+  	76%{opacity:0;}
+  	77%{opacity:1;}
+  	85%{opacity:1;}
+  	86%{opacity:0;}
+  	90%{opacity:0;}
+  	91%{opacity:1;}
+  	95%{opacity:1;}
+  	96%{opacity:0;}
+  	98%{opacity:1;}
+    100%{opacity:1;}	  		  		  		  	  
+}
+@keyframes eyes_sub {/*눈 깜빡임*/
+   	0%{opacity:0;}
+  	70%{opacity:0;}
+  	71%{opacity:1;}
+  	76%{opacity:1;}
+  	77%{opacity:0;}
+  	85%{opacity:0;}
+  	86%{opacity:1;}
+  	90%{opacity:1;}
+  	91%{opacity:0;}
+  	95%{opacity:0;}
+  	96%{opacity:1;}
+  	98%{opacity:0;}
+    100%{opacity:0;}	  	  	  
+}
+
+.sprImg01{position:absolute; width:32px; bottom:40px; left:87px; -webkit-animation:spring1 10s ease-in 0s infinite; -ms-animation:spring1 10s ease-in 0s infinite; animation:spring1 10s ease-in 0s infinite; }
+.sprImg02{position:absolute; bottom:19px; left:114px; -webkit-animation:spring2 10s ease-out 0s infinite; -ms-animation:spring2 10s ease-out 0s infinite; animation:spring2 10s ease-out 0s infinite;}
+.sprImg03{position:absolute; bottom:10px; right:39px;}
+.sprImg04{position:absolute; right:37px; transform:rotate(90deg); transform:scale(1);  bottom:95px; right:25px; -webkit-animation:spring3 10s linear 0s infinite; -ms-animation:spring3 10s linear 0s infinite; animation:spring3 10s linear 0s infinite;}
+.sprImg05{position:absolute; top:95px; right:55px;}
+.sprImg06{position:absolute; bottom:-2px; left:82px;}
+.sprImg07{position:absolute; bottom:0; right:7px;}
+
+.sumImg01{position:absolute; bottom:20px; right:10px;}
+.sumImg02{position:absolute; bottom:0; right:28px;}
+.sumImg03{position:absolute; bottom:-15px; left:72px; -webkit-animation:summer1 10s ease-in 0s infinite; -ms-animation:summer1 10s ease-in 0s infinite; animation:summer1 10s ease-in 0s infinite;}
+
+.fallImg01{position:absolute; bottom:13px; right:13px; transform-origin:center bottom;  -webkit-animation:fall1 10s ease-in-out 0s infinite; -ms-animation:fall1 10s ease-in-out 0s infinite; animation:fall1 10s ease-in-out 0s infinite;}
+.fallImg01_sub{position:absolute; bottom:13px; right:13px; opacity:0; transform-origin:center bottom;  -webkit-animation:fall1_sub 10s ease-in-out 0s infinite; -ms-animation:fall1_sub 10s ease-in-out 0s infinite; animation:fall1_sub 10s ease-in-out 0s infinite;}
+.fallImg02{position:absolute; bottom:0; right:22px;}
+.fallImg03{position:absolute; bottom:-31px; left:75px; width:17px; transform-origin:center bottom; -webkit-animation:fall1 10s ease-in-out 0s infinite; -ms-animation:fall1 10s ease-in-out 0s infinite; animation:fall1 10s ease-in-out 0s infinite;}
+.fallImg04{position:absolute; bottom:-32px; left:99px; -webkit-transform-origin:center bottom; -ms-transform-origin:center bottom; transform-origin:center bottom;  -webkit-animation:fall1 10s ease-in-out 0s infinite; -ms-animation:fall1 10s ease-in-out 0s infinite; animation:fall1 10s ease-in-out 0s infinite;}
+
+.wtImg01{position:absolute; bottom:10px; right:27px;}
+.wtImg02{position:absolute; bottom:109px; right:58px; animation:eyes 10s ease-in-out 0s infinite;}
+.wtImg02_sub{position:absolute; bottom:109px; right:58px; opacity:0; animation:eyes_sub 10s ease-in-out 0s infinite;}
+.wtImg03{position:absolute; bottom:67px; right:107px; animation:winter2 10s ease-in-out 0s infinite; transform-origin:right bottom;}
+.wtImg04{position:absolute; bottom:67px; right:8px; animation:winter3 10s ease-in-out 0s infinite; transform-origin:left bottom;}
+.wtImg05{position:absolute; bottom:0; right:9px;}
+.wtImg06{position:absolute; opacity:0; left:80%; top:220px; animation:winter1 10s ease-in-out 0s infinite;}
+
+/*월별 사고환자 수*/
+.mnChart_ul .mnC{position:relative; width:80px; height:100%; display:inline-block; bottom:0;}
+.mnC .mn_bar{background:url('../../images/carInsurance/ct2/chBg.gif') 0 0 repeat; width:60px; min-height:20px; position:absolute; bottom:0;}
+.mnChart_ul{ font-family:'roboto',sans-serif; font-weight:600; text-align:center; font-size:19px; height:270px; padding-top:42px;}
+.mnChart_ul .label{text-align:center; color:#6f85ac; position:absolute; bottom:-25px; width:100%;}
+.mnC_0 .pin01_rk{margin-top:-5px; position:relative;}
+.mnText{position:absolute; background:url('../../images/carInsurance/ct2/hover_arrow.png') 88% 9px no-repeat ,url('../../images/carInsurance/ct2/age/fgBg.png') 0 bottom no-repeat; width:80px; height:45px; top:-41px; left:50%; 
+margin-left:-40px; line-height:1.5; background-size:6px, 80px; text-align:left; text-indent:15px;}
+.mnC_1 .mnText{background:url('../../images/carInsurance/ct2/fgBg_blue.png') 0 bottom no-repeat;}
+.mnC_2 .mnText{background:url('../../images/carInsurance/ct2/fgBg_dblue.png') 0 bottom no-repeat;}
+.mnChart_ul .label{color:#283150; position:absolute; width:100%; bottom:-30px; font-family:'nb',sans-serif;}
+.mnC_1 .label{color:#475578;}
+.mnC_2 .label{color:#283150;}
+
+.mnText_detail{padding:2px 7px; background:#6f85ac; position:absolute; top:-5px; left:-3px; text-align:center; text-indent:0; display:none; border-radius: 15px;}
+
+.mnC.rank01 .mn_bar{background:url('../../images/carInsurance/ct2/chBg_rk02.gif') 0 0 repeat; }
+.mnC.rank01 .mnText{background:url('../../images/carInsurance/ct2/hover_arrow_rk01.png') 88% 9px no-repeat ,url('../../images/carInsurance/ct2/age/fgBg_rk02.png') 0 bottom no-repeat;background-size:6px, 80px;}
+.mnC.rank01 .mnText .mnText_detail{background:#ff7a5a; top:-3px;}
+
+/*사고환자 수*/
+.tabChart{background:url('../../images/carInsurance/ct2/tab/tabBg.png') 50% 80px no-repeat; padding:0 80px; position:relative; overflow:hidden;}
+.allText{font-size:17px; color:#283150;  font-family:'nb',sans-serif; letter-spacing:-1px;  position:absolute; top:0; left:80px; line-height:1.1;}
+.allText .text-red{font-weight:900; font-size:27px; color:#ec6a66; font-family:'roboto',sans-serif; padding-left:62px; }
+.tabChart_ul{float:right; width:772px;}
+.tabChart_ul li{width:23%; display:inline-block; margin-right:2%; position:relative; height:428px;}
+
+.tabChart_ul li:last-child{margin-right:0;}
+.tabChart_ul .tab_bar{width:100%; height:100%;}
+.tabChart_ul .tabC_0 .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk01.png') 50% 40% no-repeat;}
+/*.tabChart_ul .tabC_0 .tab_bar:hover,.tabChart_ul .tabC_0.active .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk01_hover.png') 50% 40% no-repeat, url('../../images/carInsurance/ct2/tab/tab_rk01.png') 50% bottom no-repeat;}*/
+.tabChart_ul .tabC_1 .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk02.png') 50% 62% no-repeat;}
+/*.tabChart_ul .tabC_1 .tab_bar:hover,.tabChart_ul .tabC_1.active .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk02_hover.png') 50% 62% no-repeat, url('../../images/carInsurance/ct2/tab/tab_rk01.png') 50% bottom no-repeat;}*/
+.tabChart_ul .tabC_2 .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk03.png') 50% 73% no-repeat;}
+/*.tabChart_ul .tabC_2 .tab_bar:hover,.tabChart_ul .tabC_2.active .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk03_hover.png') 50% 73% no-repeat, url('../../images/carInsurance/ct2/tab/tab_rk01.png') 50% bottom no-repeat;}*/
+.tabChart_ul .tabC_3 .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk04.png') 50% 61% no-repeat;}
+/*.tabChart_ul .tabC_3 .tab_bar:hover,.tabChart_ul .tabC_3.active .tab_bar{background:url('../../images/carInsurance/ct2/tab/rk04.png') 50% 61% no-repeat, url('../../images/carInsurance/ct2/tab/tab_rk04.png') 50% bottom no-repeat;}*/
+.tabC .pin01_rk{font-size:20px; font-weight:400; color:#fffed5; font-family:'roboto','nb',sans-serif; text-align:center; padding:7px 5px; position:absolute; top:0; min-width:165px; height:23px; white-space:nowrap;  border-radius:20px;}
+.tabC .pin01_rk .yellow{font-weight:600; text-align:center;}
+.tabC .label{position:absolute; bottom:56px; font-family:'nb',sans-serif; font-size:20.5px; color:#283150; font-weight:600; text-align:center; width:165px;}
+.tabC_0 .pin01_rk{top:15px; min-width:165px; left:50%; margin-left:-78.5px; background:#d52900;}
+.tabC_1 .pin01_rk{top:41px; min-width:153px; left:9%; background:#ff7a5a;}
+.tabC_2 .pin01_rk{top:66px; min-width:153px; left:7%; background:#ffae9a;}
+.tabC_3 .pin01_rk{top:82px; min-width:125px; left:11%; background:#6f85ac;}
+.tabC_0 .label{bottom:55px; left:10px;}
+.tabC_1 .label{bottom:45px; left:10px;}
+.tabC_2 .label{bottom:32px; left:10px;}
+.tabC_3 .label{bottom:28px; left:13px;}
+
+.tabContents{clear:both; background:#dde0e6; border-radius:30px; overflow:hidden; padding:40px;}
+.tabContents .chart-caption{font-size:14px; color:#283150; font-family:'nb',sans-serif; margin-bottom:12px; font-weight:600;}
+.tt_h4{font-family:'nb',sans-serif; font-size:17px; font-weight:400; background:url('../../images/carInsurance/ct2/tab/h4_bg.gif') 0 bottom no-repeat; padding-bottom:13px;}
+.tt_h4 strong{font-weight:bold;}
+
+/*지역별 현황*/
+.w_50{width:50%; float:left;}
+.sMapChart{position:relative; background:url('../../images/carInsurance/ct2/map/map_sm.png') 50% 50% no-repeat; height:437px; width:290px; margin:0 auto;}
+.sMapChart .city{background:url('../../images/carInsurance/ct2/map/map_sPin.png') 0 0 no-repeat; color:#ffffff; font-family:'nb',sans-serif; position:absolute; width:46px; height:70px;}
+.sMapChart .cityText{width:130px; padding:6.5px 15px; display:table; font-size:16px; }
+.sMapChart .city .rank{font-family:'roboto',sans-serif; font-size:12px; display:block;}
+.sMapChart .city .white{font-family:'roboto',sans-serif; font-size:14px; display:block; line-height:0.75; font-weight:600;}
+.sMapChart .chart-caption{margin-right:80px; color:#757575; font-size:14px;}
+
+.sMapChart .city.rank01{background:url('../../images/carInsurance/ct2/map/map_sPin_rk01.png') 0 0 no-repeat;}
+.sMapChart .city.rank02{background:url('../../images/carInsurance/ct2/map/map_sPin_rk02.png') 0 0 no-repeat;}
+.sMapChart .city.rank03{background:url('../../images/carInsurance/ct2/map/map_sPin_rk03.png') 0 0 no-repeat;}
+
+.cityTextSm{text-align:center; line-height:2; padding-top:13px;}
+.cityName{position:absolute; bottom:0; text-align:center; font-size:12px; color:#283150; width:46px; font-weight:600;}
+.sMapChart .seoul{top:40px; left:36px; z-index:9;}
+.sMapChart .gyeongi{top:-10px; left:77px;}
+.sMapChart .incheon{top:38px; left:-1px;}
+.sMapChart .sejong{top:126px; left:67px;}
+.sMapChart .chungnam{top:135px; left:20px;}
+.sMapChart .jeonbuk{top:200px; left:64px;}
+.sMapChart .gwangju{top:226px; left:32px;}
+.sMapChart .jeonnam{top:294px; left:9px;}
+.sMapChart .gangwon{top:0; right:110px;}
+.sMapChart .chungbuk{top:70px; right:130px;}
+.sMapChart .gyeongbuk{top:108px; right:68px;}
+.sMapChart .daejeon{top:143px; left:100px;}
+.sMapChart .daegu{top:194px; right:102px;}
+.sMapChart .ulsan{top:202px; right:27px;}
+.sMapChart .busan{top:235px; right:62px;}
+.sMapChart .gyeongnam{top:242px; left:105px;}
+.sMapChart .jeju{bottom:12px; left:39px; top:auto;}
+
+/*다발생 환자정보*/
+.wheelNav text{ font-family:'roboto',sans-serif !important; font-size: 14px !important; cursor: pointer; font-weight:600 !important;}
+.legend{margin-top:25px; overflow:hidden;}
+.legend ul li{display:inline-block; float:left; padding-right:8px; font-family:'roboto',sans-serif; font-size:13px; color:#283150; font-weight:bold;}
+.legend ul li:last-child{padding-right:0;}
+.legend ul li img{margin-right:3px;}
+
+/*다빈도 질병정보*/
+.disChart {overflow:hidden; padding:0 80px;}
+.inner_img{position:absolute; top:16px; right:16px; z-index:9;}
+.outer_img{position:absolute; top:90px; left:6px; z-index:9;}
+.disChart .tt_h4{font-family:'10X10'; font-size:45px; color:#ff7a5a; font-weight:600; background:none; margin-bottom:18px; letter-spacing:-3px;}
+.disChart .w_50{padding-top:30px; position:relative;}
+.dis_innerC{padding-right:5px;}
+.dis_outerC{padding-left:5px;}
+.disChart_ul li{display:table; width:100%; height:36px; margin-bottom:10px; position:relative;}
+.disBar-wrap{position:absolute; margin-left:185px; top:0; right:0; display:table; width:320px;}
+.disC .label{color:#6f85ac; font-family:'nb',sans-serif; font-weight:600; font-size:13px; display:table-cell; vertical-align:middle; width:185px;}
+
+.dis_outerC .disC .label .epli2{text-align:right; width:185px; }
+
+.dis_outerC .disC .label{text-align:right;}
+.dis_bar{ display:table-cell; background:url('../../images/carInsurance/ct2/chBg.gif') 0 0 repeat; height:36px; min-width:15px;}
+
+
+.disText{font-family:'roboto',sans-serif; font-size:20px; font-weight:600; text-align:right; margin-right:10px;}
+.dis_innerC .pin01_rk{display:table-cell; vertical-align:middle; text-align:right;}
+.dis_outerC .pin01_rk{display:table-cell; vertical-align:middle;}
+.dis_outerC .disText{margin-right:0; margin-left:10px;}
+.dis_outerC .disBar-wrap{left:0; margin-left:0; margin-right:185px;}
+
+.disC.rank01 .dis_bar{background:url('../../images/carInsurance/ct2/chBg_rk01.gif') 0 0 repeat;}
+.disC.rank02 .dis_bar{background:url('../../images/carInsurance/ct2/chBg_rk02.gif') 0 0 repeat;}
+.disC.rank03 .dis_bar{background:url('../../images/carInsurance/ct2/chBg_rk03.gif') 0 0 repeat;}
+
+.disC.rank01 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 15% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk01.gif') 0 0 repeat;}
+.disC.rank01 .disText{color:#d52900;}
+.disC.rank02 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 15% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk02.gif') 0 0 repeat;}
+.disC.rank02 .disText{color:#ff7a5a;}
+.disC.rank03 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 15% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk03.gif') 0 0 repeat;}
+.disC.rank03 .disText{color:#ffae9a;}
+.disC.rank01 .label,.disC.rank02 .label,.disC.rank03 .label{color:#283150;}
+.dis_outerC .disC.rank01 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 82% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk01.gif') 0 0 repeat;}
+.dis_outerC .disC.rank02 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 82% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk02.gif') 0 0 repeat;}
+.dis_outerC .disC.rank03 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 82% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk03.gif') 0 0 repeat;}
+
+/*다빈도 수술정보*/
+.disChart02{background:url('../../images/carInsurance/ct2/opBg.png') 82% bottom no-repeat; position:relative;}
+.disChart02 .label{width:17.7%;}
+.chResult{position:absolute; font-size:14px; color:#596a8a; font-weight:600; right:140px; bottom:215px; text-align:center; line-height:1.4;}
+.chResult .red{font-size:20px; font-weight:bold;}
+.disChart02 .disBar-wrap{margin-left:0; right:auto; left:185px; width:82.3%;}
+.disChart02 .pin01_rk{display:table-cell; vertical-align:middle; text-align:left;}
+.disChart02 .disText{margin-left:10px;}
+.disChart02 .disC.rank01 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 90% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk01.gif') 0 0 repeat;}
+.disChart02 .disC.rank02 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 90% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk02.gif') 0 0 repeat;}
+.disChart02 .disC.rank03 .dis_bar.max_over{background:url('../../images/carInsurance/ct2/max_over.png') 90% 0 no-repeat, url('../../images/carInsurance/ct2/chBg_rk03.gif') 0 0 repeat;}
+
+.epli2{display:block; max-height:36px; overflow:hidden; vertical-align:top; text-overflow: ellipsis; word-break:break-all; /*
+-webkit-box-orient:vertical; -webkit-line-clamp:2;
+-ms-box-orient:vertical; -ms-line-clamp:2; -moz-box-orient:vertical; -moz-line-clamp:2; box-orient:vertical; line-clamp:2;*/
+ line-height:1.4;}
+
+.prg{margin: 30px 80px 0; line-height:1.3;}
+.prg p{font-size:16px; font-weight:600; margin-bottom:5px;}
+.prg strong{line-height:1.7;}
+/*menu01*/
+.menu1Content{padding:0 80px;}
+.menu1Content img{width:100%;}
+
+/*menu03*/
+.bx-wrapper{margin:0 auto; box-shadow:none; border:0; background:none;}
+.bx-controls-direction{margin-top:25px; text-align:center;}
+.bx-wrapper .bx-controls-direction a{position:static; display:inline-block; width:83px; height:72px; margin:0 5px;}
+
+.bx-wrapper .bx-controls-direction a.bx-prev.disabled{display:inline-block; background:url('../../images/carInsurance/ct3/prev.gif') 0 0 no-repeat;}
+.bx-wrapper .bx-controls-direction a.bx-next.disabled{display:inline-block; background:url('../../images/carInsurance/ct3/next.gif') 0 0 no-repeat;}
+.bx-wrapper .bx-prev{background:url('../../images/carInsurance/ct3/prev_on.gif') 0 0 no-repeat;}
+.bx-wrapper .bx-next{background:url('../../images/carInsurance/ct3/next_on.gif') 0 0 no-repeat;}
+.bx-wrapper .bx-next:hover,.bx-wrapper .bx-next:focus{background-position:0;}
+.faq_slideTab.tabChart_ul{clear:both;}
+.faq_slideTab.tabChart_ul li{margin-right:0; width:257px; height:67px; padding-top:153px; padding-bottom:8px; display:table; line-height:1.3;}
+.faq_slideTab.tabChart_ul li.faqli02{padding-top:149px;}
+.faq_slideTab.tabChart_ul li.faqli03,.faq_slideTab.tabChart_ul li.faqli04{padding-top:148px;}
+.faq_slideTab.tabChart_ul li:hover{cursor:pointer;}
+.faq_slideTab.tabChart_ul li a{display:table-cell; width:100%; text-align:center; vertical-align:middle; font-size:17px; color:#ffffff; font-weight:bold; font-family:'nb',sans-serif; }
+.faq_slideTab .faqli01{background:url('../../images/carInsurance/ct3/faq01.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli01.active{background:url('../../images/carInsurance/ct3/faq01_on.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli02{background:url('../../images/carInsurance/ct3/faq03.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli02.active{background:url('../../images/carInsurance/ct3/faq03_on.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli03{background:url('../../images/carInsurance/ct3/faq02.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli03.active{background:url('../../images/carInsurance/ct3/faq02_on.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli04{background:url('../../images/carInsurance/ct3/faq04.gif') 0 0 no-repeat;}
+.faq_slideTab .faqli04.active{background:url('../../images/carInsurance/ct3/faq04_on.gif') 0 0 no-repeat;}
+
+.faqAnswer{background:url('../../images/carInsurance/ct3/mobile_bg.png') 0 0 no-repeat; float:left; width:468px; height:901px;}
+.faqAnswer .tt_h5{margin-top:103px; font-family:'nb',sans-serif; color:#333333; font-size:24px; font-weight:600; padding:23px 0 15px;}
+.asWrap{padding:24px 13px 0; height:600px; overflow-y:auto; font-size:15px; color:#333333;}
+
+.mballoon{background:url('../../images/carInsurance/ct3/mball.png') right 2px no-repeat; padding-right:8px; display:inline-block; float:right; margin:7px 8px 7px 0;}
+.mballoon p{background:#ffeb00; border-radius:2px; padding:10px; line-height:1.35; max-width:365px;}
+
+.yballoon_wrap{padding-left:6px; margin:7.5px 0;}
+.prof{width:38px; height:38px; display:inline-block;float:left; margin-right:4px;}
+.prof img{width:100%;}
+.prof_name{font-size:12px; color:#333d44; margin-left:48px; margin-bottom:5px;}
+.yballoon{background:url('../../images/carInsurance/ct3/yball.png') -3px 2px no-repeat; padding-left:5px; display:inline-block; }
+.yballoon p{background:#ffffff; border-radius:2px; padding:10px; line-height:1.35; width:326px;}
+.yballoon p a{color:#0055ff; text-decoration:underline;}
+.yballoon .blue{color:#0055ff;}
+
+/*2017.06.23 추가*/
+.hide{text-indent:-99999px; font-size:0;}
+/*2017.07.12 추가*/
+.arrWrap{width:100%; height:100%; text-align:center; position:fixed; left:0; bottom:0; z-index:999;}
+/*20170713 배경,화살표*/ 
+.arrWrap a{color:transparent; position:absolute; left:50%; display:inline-block; width:60px; height:60px; border-radius:50%; margin-left:-18px; text-indent:-9999px;}
+.arrWrap a.up_arr{background:url('../../images/carInsurance/ct2/hover_up.png') no-repeat center; top:75px;}
+.arrWrap a.down_arr{background:url('../../images/carInsurance/ct2/hover_down.png') no-repeat center; bottom:75px;}
+/*//20170713 배경,화살표*/
+.arrWrap a.off{display:none;}
+
+.arrWrap.top{height:calc(100% - 660px);}
+.arrWrap.top a.down_arr{bottom:20px; }
+
+@media (max-width: 1200px)  {
+	body{min-width:1024px;} 
+	/*.header{background-size:82%, auto; background-position:right 103px;}*/
+	.header .obj_grp{width:780px; right:10%;}
+	.header .obj_grp .obj_01{left:auto; right:150px;}
+	
+	#backtotop{margin-left:92%;}
+	.container{width:1004px; padding:0 10px; /*width:994px; padding:0 15px;*/}
+	.gnb-ul{height:147px;}
+	.gnb-ul li a{font-size:24px;}
+	
+	.tabContents{margin:0 15px;}
+	.mnChart_ul .mnC{width:70px;}
+	.allText{left:50px;}
+	.tabChart{padding:0;}
+	.tabChart_ul{width:737px;}
+	.tabChart_ul li{width:24.6%; margin-right:0;}
+	.tabC_1 .pin01_rk{left:20px;}
+	.tabC_1 .label{left:15px;}
+	.tabC_2 .label{left:13px;}
+	.tabC_2 .pin01_rk{left:20px;}
+	.tabC_3 .pin01_rk{left:32px;}
+	.tabC_3 .label{left:auto; right:28px; width:135px;}
+	
+	.legend ul li{padding-right:5px;}
+	.legend ul li img{margin-right:1px;}
+	
+	.disChart{padding:0 35px;}
+	
+	.disC .label{width:169px;}
+	.dis_outerC .disBar-wrap{margin-right:169px;}
+	.chResult{right:105px;}
+	
+	.bubble{right:-15px;}
+	#go2 .chart-caption,#go3 .chart-caption{margin-right:35px;}
+	
+	.ssChart{padding:0;}
+	.ssC_Bg{width:100%; bottom:0;}
+	
+	
+	.footer-info{width:470px;}
+	.footer-menu{width:287px;}
+}
+
+@media (max-width: 500px)  {
+	.gnb-ul li a{font-size:23px;}
+}

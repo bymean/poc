@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*나눔바른고딕*/
+@font-face {
+    font-family:'nb';
+    src: url('../../fonts/carInsurance/NanumBarunGothic.eot');
+   src: local('NanumBarunGothic'), url('../../fonts/carInsurance/NanumBarunGothic.eot#iefix') format('embedded-opentype'), url('../../fonts/carInsurance/NanumBarunGothic.woff') format('woff'), url('../../fonts/carInsurance/NanumBarunGothic.ttf') format('truetype');
+}
+
+/*10x10*/
+@font-face {
+    font-family:'10X10';
+    src: url('../../fonts/carInsurance/10X10Bold.eot');
+   src: local('10X10Bold'), url('../../fonts/carInsurance/10X10Bold.eot#iefix') format('embedded-opentype'), url('../../fonts/carInsurance/10X10Bold.woff') format('woff'), url('../../fonts/carInsurance/10X10Bold.ttf') format('truetype');
+}
+
+/*roboto*/
+@font-face {
+    font-family:'roboto';
+    src: url('../../fonts/carInsurance/Roboto-Bold.eot');
+   src: local('Roboto-Bold'), url('../../fonts/carInsurance/Roboto-Bold.eot#iefix') format('embedded-opentype'), url('../../fonts/carInsurance/Roboto-Bold.woff') format('woff'), url('../../fonts/carInsurance/Roboto-Bold.ttf') format('truetype');
+}
+
+body {font-family:'nb',sans-serif;  margin:0;}
+
+.roboto{font-family:'roboto',sans-serif;}
+.no-pd{padding:0;}
+.no-mg{margin:0;}
+a,a:hover,a:focus{text-decoration:none;}			
+
+.list-inline {padding-left: 0; margin-left: -5px; list-style: none;}
+.list-inline > li {display: inline-block; padding:0; float:left;}
+
+.overflow{overflow:hidden;}
+.pull-right{float:right;}
+.pull-left{float:left;}
+
+.tac{text-align:center;}
+.tal{text-align:left;}
+.tar{text-align:right;}
+.strong{font-weight:600;}
+
+.mb_5{margin-bottom:5px;}
+.mb_40{margin-bottom:40px;}
+.mt_30{margin-top:30px;}
+.mt_55{margin-top:55px;}
+
+/*bg color*/
+.bg-gray{background:#f6f6f6;}
+.bg-white{background:#ffffff;}
+
+/*text-color*/
+.green{color:#00adb5;}
+.yellow{color:#fffed5;}
+.blue{color:#6f85ac;}
+.white{color:#ffffff;}
+.red{color:#d52900;}
+.orange{color:#ff9c00;}
+.Dorange{color:#ff7a5a;}

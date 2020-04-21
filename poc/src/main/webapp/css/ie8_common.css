@@ -1,0 +1,37 @@
+﻿
+@charset "utf-8";
+
+.main-container .main-area-01 .main-visual .right-contents .notice dd ul.main-notice-list li {background-position:left 7px;}
+.main-container .main-area-04 dl.area-01 dd ul li {background-position:left 2px;}
+.main-container .main-area-04 dl.area-03 dd ul li {background-position:left 2px;}
+
+.hosp-search-area .jong-list li a.jong strong {background-position:right 5px;}
+.diag-evl-srch .diag-evl-srch-theme .section-02 dl.hangmok-list dd span {padding-top:2px;}
+.diag-evl-info div.conts dl dt {background-position: 0 4px;}
+.newsletter-desc ul li {background-position:left 6px;}
+
+.btn_down span {padding:2px 8px 2px 26px;}
+.btn_chgs span {padding:1px 10px;}
+.btn_small span {padding:2px 5px;}
+.btn_gr span {padding:6px 12px 6px 10px;}
+.btn_gr1 {padding:3px 10px;}
+.btn_gr2 {padding:3px 10px;}
+.btn_gr3 span {padding:4px 12px 4px 10px;}
+.btn_gr4 span {padding:4px 12px 4px 10px;}
+.btn_gr5 span {padding:4px 12px 4px 10px;}
+.btn_bnr1 span {padding:8px 28px 8px 14px;}
+.btn_bnr2 span {padding:8px 28px 8px 14px;}
+.btn_nor1 span {padding:6px 12px 6px 10px;}
+.btn_nor2 span {padding:6px 12px 6px 10px;}
+.btn_nor3 span {padding:6px 12px 5px 10px;}
+.btn_nor4 span {padding:6px 12px 6px 10px;}
+.btn_nor5 span {padding:8px 12px 8px 10px;}
+.btn_pop1 span {padding:9px 28px 8px 14px;}
+.btn_pop2 span {padding:9px 28px 8px 14px;}
+.inp_btn span {padding:6px 12px 5px 10px;}
+.btn01 span {padding:6px 12px 6px 10px;}
+.btn_func span {padding:6px 12px 6px 10px;}
+.btn_pop_bnr1 span {padding:9px 28px 8px 14px;}
+.btn_pop_bnr2 span {padding:9px 28px 8px 14px;}
+
+.snumbox {height:13px;padding-top:2px;}

@@ -33,7 +33,7 @@
 	</tr>
 	<tr>
 		<td >
-			<li><a href="/rd/hosp/getHospList.do?pgmid=HIRAA030002010000">기관운영1</a></li>           
+			<li><a href="./index.html">React index</a></li>           
         </td>
         <td algin="leff">
         	<li><a href="/egovSampleList.do">샘플화면</a></li>	

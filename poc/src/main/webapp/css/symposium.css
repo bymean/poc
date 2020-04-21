@@ -1,0 +1,20 @@
+﻿.box_totalSubMain001{width:500px; right top no-repeat;}
+
+#apDiv0 {position:absolute;left:40px;top:215px;width:420px;z-index:1;}
+#apDiv0 dl{margin:0;}
+#apDiv0 dl dt{margin:0; background:url(http://www.hira.or.kr/images/popupimg/symposium/blt.gif) 5px 5px no-repeat; padding:1px 15px; border-bottom:1px solid #d2d2d2}
+#apDiv0 dl dd{margin:0; padding:5px 15px; border-bottom:1px solid #d2d2d2; font-size:11px; line-height:13px}
+
+
+#apDiv1 {position:absolute; left:50px;top:330px;width:431px;height:317px;z-index:1;}
+
+#apDiv2 {position:absolute;left:36px;top:154px;width:351px;height:57px;z-index:1;}
+
+#apDiv3 {position:absolute; left:40px;top:140px;width:436px;height:498px;z-index:1;}
+#apDiv3 fieldset{background:none; padding:0; margin:0; border:0;}
+
+.btn_map {position:absolute;left:350px;top:60px;}
+
+.input011 {border:1px solid #d2d2d2; hieght:18px; font-size:12px; color:#666666;}
+
+.style1 { font-size:12px; color:#454545; }

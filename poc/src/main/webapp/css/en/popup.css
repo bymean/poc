@@ -1,0 +1,39 @@
+/* reset */
+html {min-height:100%;}
+body {min-height:100%;overflow-y:auto !important;text-align:left;background:#fff;}
+#header {height:47px;background:#fff url(../../eng/images/popup/bg_popup.gif) no-repeat right 0;}
+#header h1 {float:left;padding-right:38px;background:url(../../eng/images/popup/bg_header_right.png) no-repeat right bottom;font-size:16px;color:#000;}
+#header h1 strong {display:block;padding:20px 30px 9px 56px;background:url(../../eng/images/popup/bg_header_left.gif) no-repeat 0 0;}
+
+#container {padding:0 !important;width:100% !important;}
+#container #pop_content {padding:20px;}
+#footer {clear:both;width:100%;height:auto;padding:10px 0;border:0;text-align:center;background:#fff;}
+
+#pop_content .tbl_default {margin-bottom:0;}
+#pop_content .wrap_pager {padding-top:20px;}
+
+#container #pop_contentv {padding:20px 0;background:#fff;}
+#container #pop_contentv .bl_dot {margin:0 0 10px 0;}
+#container #pop_contentv .mapwrap {text-align:center;}
+#container #pop_contentv .mapwrap #map {margin:0 auto;}
+
+.btn_pop1 {display:inline-block;margin-right:-2px;padding:0 0 0 14px;vertical-align:middle;background:url(../../eng/images/popup/pop_bn_bnr_left.png) no-repeat 0 0;color:#505050;font-weight:bold;}
+.btn_pop1 span {display:inline-block;padding:8px 28px 9px 15px;background:url(../../eng/images/popup/pop_bn_bnr_right.png) no-repeat right 0;}
+.btn_pop1:hover, .btn_pop1:active {color:#505050;}
+.btn_pop2 {display:inline-block;margin-right:-2px;padding:0 0 0 14px;vertical-align:middle;background:url(../../eng/images/popup/pop_bn_bnr2_left.png) no-repeat 0 0;color:#505050;font-weight:bold;}
+.btn_pop2 span {display:inline-block;padding:8px 28px 9px 15px;background:url(../../eng/images/popup/pop_bn_bnr2_right.png) no-repeat right 0;}
+.btn_pop2:hover, .btn_pop2:active {color:#505050;}
+
+.thum_view {overflow:hidden;margin-bottom:20px;}
+.thum_view dt {float:left;margin:0 10px 10px 0;text-align:center;}
+.thum_view dd {float:left;width:320px;}
+.thum_view dd p {margin:0 0 0 0;padding:0 0 0 7px;background:url(../../eng/images/common/bl_dot1.gif) no-repeat 0 9px;color:#505050;font-weight:normal;} 
+.thum_view dd img {border:1px solid #555555;}
+
+.cartoonwrap {padding:0;}
+.cartoonwrap dt {text-align:center;}
+.cartoonwrap dd {margin:0;padding:0;text-align:center;}
+.cartoonwrap dd img {border:1px solid #555555;}
+.cartoonwrap dt {margin-bottom:40px;text-align:center;color:#0578d1;font-weight:bold;font-size:16px;line-height:1.6em;}
+.cartoonwrap dt p {margin-bottom:40px;font-size:16px;font-weight:bold;}
+.cartoonwrap dt strong {display:block;color:#252525;}

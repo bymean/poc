@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.president_wrap {position:relative;}
+.president_wrap dt {position:absolute;top:54px;right:0;}
+.president_wrap dd {position:relative;z-index:2;}
+.president_wrap dd h2 {margin-bottom:20px;font-size:20px;color:#0578d1;}
+.president_wrap dd p {margin-bottom:20px;}
+
+.vision_wrap {padding:20px 0 0 0;}
+
+.organ_wrap {margin-bottom:30px;}
+.organ_wrap1 {margin:0 0 0 10px;}
+
+.img_box {margin:10px 0 20px -15px;}
+.img_box_n {margin:10px 0 6px -15px;}
+.center_img {margin:10px 0 6px -15px;text-align:center;}
+.ul_space {margin-bottom:10px !important;}
+.sub_p {margin:5px 0 10px 0;color:#505050;}
+.sub_p2 {margin:0 0 6px 0;color:#505050;}
+.tbl_caption {margin-bottom:4px;text-align:right;}
+.tbl_bot {margin-bottom:4px;text-align:right;}
+.vtop {vertical-align:top;}
+.tdright {text-align:right;}

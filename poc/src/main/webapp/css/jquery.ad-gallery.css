@@ -1,0 +1,27 @@
+#iframeBody {background:#fff;}
+
+.top_gallery {margin-bottom:30px;}
+.ad-gallery {width:760px;height:206px;background:url(../images/board/bg_gallery_boxt1.gif) no-repeat 0 0;}
+.ad-gallery .ad-nav {position:relative;width:100%;height:160px;padding-top:10px;text-align:center;}
+.ad-gallery .ad-thumbs {overflow:hidden;width:900px;padding:0 13px;}
+.ad-gallery .ad-thumbs .ad-thumb-list {overflow:hidden;width:1000px;height:136px;}
+.ad-gallery .ad-thumbs li {float:left;width:144px;margin:0 1px;height:150px;text-align:left;}
+.ad-gallery .ad-thumbs li a {display: block;}
+.ad-gallery .ad-thumbs li a img {width:138px;height:91px;margin:3px 3px 10px 3px;border:1px solid #d4d4d4;}
+.ad-gallery .ad-thumbs li a.ad-active img {width:138px;height:91px;margin:0 0 7px 0;border: 3px solid #23abf1;}
+.ad-gallery .ad-back {vertical-align:middle;overflow:hidden;display:inline-block !important;width:20px;height:20px;margin-right:4px;font-size:0;line-height:100px;}
+.ad-gallery .ad-back {vertical-align:middle;overflow:hidden;display:inline-block;width:27px;height:21px;vertical-align:middle;background:url(../images/board/ad_scroll_back.gif) 0 0 no-repeat;cursor:pointer;}
+.ad-gallery .ad-back:hover,
+.ad-gallery .ad-back:active {background:url(../images/board/ad_scroll_back_on.gif) 0 0 no-repeat;}
+.ad-gallery .ad-backfir {vertical-align:middle;overflow:hidden;display:inline-block;*display:inline-block;width:27px;height:21px;margin-right:-2px;vertical-align:middle;background: url(../images/board/ad_scroll_back_fir.gif) 0 0 no-repeat;cursor:pointer;font-size:0;line-height:100px;}
+.ad-gallery .ad-backfir:hover,
+.ad-gallery .ad-backfir:active {background:url(../images/board/ad_scroll_back_fir_on.gif) 0 0 no-repeat;}
+.ad-gallery .ad-forwardfir {vertical-align:middle;overflow:hidden;display:inline-block;*display:inline-block;width:27px;height:21px;margin-left:-2px;vertical-align:middle;background: url(../images/board/ad_scroll_forward_fir.gif) 0 0 no-repeat;cursor:pointer;font-size:0;line-height:100px;}
+.ad-gallery .ad-forwardfir:hover,
+.ad-gallery .ad-forwardfir:active {background:url(../images/board/ad_scroll_forwardfir_on.gif) 0 0 no-repeat;}
+.ad-gallery .ad-forward,
+.ad-gallery .ad-forward {vertical-align:middle;overflow:hidden;display:inline-block;*display:inline-block;width:27px;height:21px;margin-left:6px;vertical-align:middle;background: url(../images/board/ad_scroll_forward.gif) 0 0 no-repeat;cursor:pointer;font-size:0;line-height:100px;}
+.ad-gallery .ad-forward:hover,
+.ad-gallery .ad-forward:active {background:url(../images/board/ad_scroll_forward_on.gif) 0 0 no-repeat;}
+.ad-gallery .ad-controls strong {vertical-align:middle;overflow:hidden;display:inline-block;*display:inline-block;width:8px;height:8px;margin:0 1px;background:url(../images/board/mpaging_on.gif) no-repeat 0 0;font-size:0;line-height:100px;}
+.ad-gallery .ad-controls .pg {vertical-align:middle;overflow:hidden;display:inline-block;*display:inline-block;width:8px;height:8px;margin:0 1px;background:url(../images/board/mpaging_off.gif) no-repeat 0 0;font-size:0;line-height:100px;}

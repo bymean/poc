@@ -1,0 +1,34 @@
+        #top {
+        background: #252530;
+        height: 60px;
+        position: relative;
+        z-index: 2;
+    }
+    #top #logo {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    #top img {
+        height: 100px;
+        margin-top: -25px;
+    }
+    #result {
+        position: fixed;
+        left: 750px;
+        top: 100px;
+        min-height: 100px;
+        min-width: 600px;
+    }
+    .info {
+        font-size: 0.8em;
+        color: gray;
+    }
+
+    div#toggle{
+        visibility: hidden;
+    }
+    .CodeMirror-wrap {
+        border: 1px solid #ddd
+    }
+

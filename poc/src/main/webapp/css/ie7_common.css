@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+
+#header #gnbmenu .submenuwp .submenubox .gright ul li ul li a {padding-top:0;}
+#content .term-explain {margin-top:2px;}
+#footer .foot_top .fright .selsite li select {height:auto; font-size:13px;}
+
+.run_box_t {z-index:2;}
+.hosp-search-area .jong-list li a.jong strong {background-position:right 5px;}
+.diag-evl-srch .diag-evl-srch-theme .section-02 dl.hangmok-list dd span {padding-top:3px;}
+.diag-evl-info div.conts dl dt {background-position: 0 4px;}
+.diag-evl-info div.conts dl.graph-01 dd ul li div.graph {bottom:35px;}
+.diag-evl-info div.conts dl.graph-04 dd ul li div.graph {bottom:45px;}
+.diag-evl-info div.conts dl.graph-07 dd ul li div.graph {bottom:45px;}
+.diag-evl-info div.conts dl.graph-08 dd ul li div.graph {bottom:45px;}
+.diag-evl-info div.conts dl.graph-09 dd ul li div.graph {bottom:45px;}
+.diag-evl-info div.conts dl.text dd {z-index:1;}
+.diag-evl-info div.conts dl.text dd .lyrst1 {z-index:2;}
+.diag-evl-grade {z-index:1;}
+.diag-evl-info-history dl.contents dd.rslt {z-index:3;}
+.diag-evl-info-history .diag-evl-info {z-index:1;}
+.diag-evl-info-history .diag-evl-info div.conts dl.graph-01 dd {z-index:2;}
+.diag-evl-result-desc {background-position:0 8px;}
+.diag-amt-srch .diag-amt-srch-area .section dd.code-list ul li ul li {margin-bottom:4px;}
+.diag-nondeductible-head {z-index:1;}
+.study-report .study-search-form .category {margin-top:5px;}
+.medicine-calculator .medicine-calculator-drug-list .medicine-calculator-result em {background-position:right 3px;}
+.newsletter-desc ul li {background-position:left 6px;}
+.run_box_t.di_info_13100 .tbl_input th input.chk {margin-left:-4px;}
+
+.btn_down span {padding:2px 8px 2px 26px;}
+.btn_chgs span {padding:1px 10px;}
+.btn_small span {padding:2px 5px;}
+.btn_gr span {padding:6px 12px 6px 10px;}
+.btn_gr1 {padding:3px 10px;}
+.btn_gr2 {padding:3px 10px;}
+.btn_gr3 span {padding:4px 12px 4px 10px;}
+.btn_gr4 span {padding:4px 12px 4px 10px;}
+.btn_gr5 span {padding:4px 12px 4px 10px;}
+.btn_bnr1 span {padding:8px 28px 8px 14px;}
+.btn_bnr2 span {padding:8px 28px 8px 14px;}
+.btn_nor1 span {padding:6px 12px 6px 10px;}
+.btn_nor2 span {padding:6px 12px 6px 10px;}
+.btn_nor3 span {padding:6px 12px 5px 10px;}
+.btn_nor4 span {padding:6px 12px 6px 10px;}
+.btn_nor5 span {padding:8px 12px 8px 10px;}
+.btn_pop1 span {padding:9px 28px 8px 14px;}
+.btn_pop2 span {padding:9px 28px 8px 14px;}
+.inp_btn span {padding:6px 12px 5px 10px;}
+.btn01 span {padding:6px 12px 6px 10px;}
+.btn_func span {padding:6px 12px 6px 10px;}
+.btn_pop_bnr1 span {padding:9px 28px 8px 14px;}
+.btn_pop_bnr2 span {padding:9px 28px 8px 14px;}
+.btn_go span {height:16px;padding:3px 16px 3px 5px;}
+.link_viewbox1 .link1 strong {padding:8px 18px 8px 16px; line-height:120%;}
+
+.snumbox {height:14px;padding-top:1px;}
+.mypage-main .section .user-info dl dd {margin-top:13px;}
+.mypage-main .section .process ul {height:83px; margin-top:15px}
+.mypage-main .section .process ul li.none {padding-top:37px;}
+.mypage-main .section .scrap .article {height:145px;}
+
+.form_search .opt01 {height:auto;}
+.srhtblwrap1 .select {height:auto;}
+.srhtblwrap1 ul li .opt_internet01 {height:auto;}
+
+.common-calendar-area .common-calendar-body .common-calendar-table thead th.select a {padding:3px 7px 3px 7px;}

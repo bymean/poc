@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+
+#header {display:none;}
+.location {display:none;}
+.renew-page-utill {display:none;}
+.renew-satisfaction {display:none;}
+.quick-menu {display:none;}
+#footer {display:none;}
+.wrap_tab li a {color:#fff;}
+.wrap_tab li.on a {color:#000;}
+.tit_square01, .content .tit_square01 {padding-left:0;}

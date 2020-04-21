@@ -1,0 +1,150 @@
+﻿#header h1 strong {padding:20px 30px 11px 56px;}
+#left ul li ul li a.hover {background-position:0 5px;}
+#left ul li a.hover {*background-position:3px 3px;}
+table {*border-collapse:collapse;}
+/*
+#footer .foot_top .fright .selsite li .nor_select .sbOptions {*width:200px;}
+*/
+
+.styled.sbHolder .sbSelector {padding-top:9px;}
+
+/*
+span.customSelect.opt01  {padding:0 0 0 0;line-height:1.4em;}
+.opt01 .customSelectInner {padding:6px 0 1px 6px;}
+*/
+/*
+.btn_func span {padding:7px 11px 5px 5px;}
+.btn01 span {padding:7px 11px 5px 10px;}
+.btn_gr3 span {padding:3px 6px 3px 5px;}
+.btn_bnr1 span {padding:8px 28px 10px 15px;}
+.btn_nor2 span {padding:7px 12px 7px 10px;}
+.btn_nor4 span {padding:7px 11px 7px 10px;}
+*/
+.mid_srh_box .inptype {padding:4px 5px 7px 5px;}
+.run_box_t.di_info_13100 .section .form_search_n .inptype {padding:4px 5px 8px 5px;}
+
+.inptype {height:16px;}
+
+.tbl_btm dt {padding:11px 31px 9px 19px;}
+
+.form_search .inp_btn span {filter: alpha(opacity=0);background:transparent;zoom:1;}
+
+/*
+.wrap_pager a span {padding:9px 12px 8px 11px;}
+.wrap_pager .on strong {padding:9px 12px 8px 11px;}
+*/
+
+.selectbx {padding:5px 30px 7px 8px;}
+#medi_thema_wrap .srhwrap .section .inptype {padding:4px 5px 8px;}
+
+#medi_apprinfo_detail .boxbot dl {*width:582px;*height:90px;}
+
+input[type=checkbox] {margin-top:-3px;}
+.section_agree .agree input {margin-top:-3px;}
+
+/*
+.btn_gr span {height:17px;padding:6px 11px 3px 10px;}
+.btn_gr1 {height:17px;padding:3px 10px 0 10px;padding:8px 10px 0 10px \0/IE9;}
+.btn_pop1 span {padding:9px 28px 9px 15px;}
+.btn_pop_bnr1 span {padding:10px 28px 9px 15px;}
+.btn_pop_bnr2 span {padding:10px 28px 9px 15px;}
+.btn_bnr2 span {padding:9px 28px 9px 15px;}
+.btn_nor1 span {padding:8px 11px 6px 10px;}
+.btn_gr3 span {height:13px;padding:5px 6px 4px 5px;*padding:4px 6px 5px 5px;}
+.btn_gr4 span {*padding:3px 6px 3px 5px;}
+.btn_gr5 span {padding:4px 6px 2px 5px;}
+.btn_pop1 span {padding:10px 28px 9px 15px;}
+.btn_pop2 span {padding:10px 28px 9px 15px;}
+.btn_func span {padding:8px 11px 6px 5px;}
+.btn_nor5 span {padding:7px 11px 8px 10px;}
+*/
+#filestip span {padding-top:6px !important;background:none !important;}
+
+/* IE8 only */ 
+/*
+@media \0screen {  
+.btn_gr3 span {padding:3px 6px 6px 5px;}
+.btn_gr4 span {padding:3px 6px 4px 5px;}
+}  
+*/
+
+#totalwrap #header #header_top .srhoption label input {margin:1px 5px 0 0;}
+#totalwrap .srh_top .srhinfo .srhnum span {padding:6px 10px 5px 0;}
+
+/*
+select {height:20px}
+*/
+.wrap_tbl_data .sbHolder{width:70px;}
+.sbHolder {*display:inline;}
+span.customSelect.nor_select  {padding:0 0 1px 0;}
+
+#content .wrap_tab.usebox_tab {position:relative;z-index:2;margin-right:5px;}
+
+.cmmt_view {*display:inline;*margin-right:4px;}
+.box_D1_COMP_01_01_02 ul li h2 {*margin-bottom:14px !important;}
+
+/* 병원정보 */
+.section_medifind .wrap_list ul li div ul li {width:135px;height:1%;*margin-bottom:7px;}
+.section_midimchin .bn_downAr a {*height:10px;}
+.section_pharmacyfind .wrap_list ul li div ul {*padding:16px 0 0 21px}
+.section_pharmacyfind .wrap_list ul li div ul li {*margin-bottom:-4px;}
+.section_pharmacyfind .wrap_list ul li.selt1.on div {*top:-3px;}
+/*
+.hospital_info dl dd.btn ul li .btn_nor4 span {padding:7px 11px 6px 10px;}
+*/
+.section_select_box .use_box .inptype {*margin-top:-1px;padding:4px 4px !important;}
+
+/* IE8 only */ 
+@media \0screen {  
+.section_pharmacyfind .wrap_list ul li.selt1.on div {top:-1px;}
+.section_pharmacyfind .wrap_list ul li.selt2.on div {top:-27px;}
+.section_pharmacyfind .wrap_list ul li.selt3.on div {top:-59px;}
+.section_pharmacyfind .wrap_list ul li.selt4.on div {top:-90px;}
+
+.section_medifind .wrap_list ul li.selt9.on a {padding:15px 0 11px 0;}
+.section_medifind .wrap_list ul li.selt1.on {margin-bottom:-6px;}
+.section_medifind .wrap_list ul li.selt2.on {margin-bottom:-8px;}
+.section_medifind .wrap_list ul li.selt3.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt4.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt5.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt6.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt7.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt8.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt9.on {margin-top:-9px;}
+.section_medifind .wrap_list ul li.selt3.on div {top:-59px;}
+.section_medifind .wrap_list ul li.selt4.on div {top:-90px;}
+.section_medifind .wrap_list ul li.selt8.on div {top:-216px;}
+/*
+.hospital_info dl dd.btn ul li .btn_nor4 span {padding:7px 11px 6px 10px;}
+*/
+}
+
+/* IE9 only */ 
+@media all and (min-width:0) {
+.selectbx {padding:5px 30px 5px 8px;}
+
+.section_pharmacyfind .wrap_list ul li.selt1.on div {top:-1px;}
+.section_pharmacyfind .wrap_list ul li.selt2.on div {top:-27px;}
+.section_pharmacyfind .wrap_list ul li.selt3.on div {top:-59px;}
+.section_pharmacyfind .wrap_list ul li.selt4.on div {top:-90px;}
+
+.section_medifind .wrap_list ul li.selt9.on a {padding:15px 0 11px 0;}
+.section_medifind .wrap_list ul li.selt1.on {margin-bottom:-6px;}
+.section_medifind .wrap_list ul li.selt2.on {margin-bottom:-8px;}
+.section_medifind .wrap_list ul li.selt3.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt4.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt5.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt6.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt7.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt8.on {margin:-7px 0 -6px;}
+.section_medifind .wrap_list ul li.selt9.on {margin-top:-9px;}
+.section_medifind .wrap_list ul li.selt3.on div {top:-59px;}
+.section_medifind .wrap_list ul li.selt4.on div {top:-90px;}
+.section_medifind .wrap_list ul li.selt8.on div {top:-216px;}
+}
+
+/* popup */
+/* IE9 only */ 
+@media all and (min-width:0) {
+#wrap_popup #header h1 strong {padding:20px 30px 9px 56px;}
+}
