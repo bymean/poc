@@ -33,7 +33,7 @@
 	</tr>
 	<tr>
 		<td >
-			<li><a href="./index.html">React index</a></li>           
+			<li><a href="./index.html">React index-</a></li>           
         </td>
         <td algin="leff">
         	<li><a href="/egovSampleList.do">샘플화면</a></li>	
