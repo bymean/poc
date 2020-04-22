@@ -19,7 +19,7 @@
 </style>
 
 <body>
-    <h1><img src="./renew_header_logo.jpg" alt="건강보험심사평가원" "></a></h1>
+    <h1><img src="./renew_header_logo.jpg" alt="건강보험심사평가원" "></a></h1> 
     
 	<table width="300px">
 	
