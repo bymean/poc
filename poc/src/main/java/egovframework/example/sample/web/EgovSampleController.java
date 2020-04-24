@@ -34,7 +34,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.ModelAndView;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
 /**
@@ -54,7 +57,7 @@ import org.springmodules.validation.commons.DefaultBeanValidator;
  *  Copyright (C) by MOPAS All right reserved.
  */
 
-@Controller
+@RestController
 public class EgovSampleController {
 
 	/** EgovSampleService */
@@ -207,6 +210,22 @@ public class EgovSampleController {
 		sampleService.deleteSample(sampleVO);
 		status.setComplete();
 		return "forward:/egovSampleList.do";
+	}
+	
+	
+	
+	@RequestMapping("/test.json")
+	@ResponseBody
+	public ModelAndView test () throws Exception {
+		
+		ModelAndView mv = new ModelAndView("jsonView");
+		
+	    mv.addObject("recordsTotal", "aa");
+	    
+	    System.out.println(mv);
+	    
+	    return mv;
+
 	}
 
 }
