@@ -11,7 +11,7 @@ import Footer from '../components/templates/layout/footer';
 
 import 'react-data-grid/dist/react-data-grid.css';
 
-const GridSample = ({form}) => {
+const GridSample2 = ({form}) => {
   let grid; /* 그리드 선언 */
   const [gridData, setGridData] = useState([]);
   const [collapsed, setCollapsed] = useState(false);
@@ -45,19 +45,25 @@ const GridSample = ({form}) => {
 
   const columns = [
     { key: '1', name: 'No' },
-    { key: '2', name: '신청구분' },
-    { key: '3', name: '신청일자' },
-    { key: '4', name: '해지일자' },
-    { key: '5', name: '승인일자' },
-    { key: '6', name: '변경 및 해지사유' },
-    { key: '7', name: '진행상태' }
-  ].map(c => ({ ...c, ...defaultColumnProperties }));
+    { key: '2', name: '관계' },
+    { key: '3', name: '가족성명' },
+    { key: '4', name: '신청구분' },
+    { key: '5', name: '취득(상실)일' },
+    { key: '6', name: '종별부호' },
+    { key: '7', name: '등급' },
+    { key: '8', name: '등록일' },
+    { key: '9', name: '국적' },
+    { key: '10', name: '체류자격' },
+    { key: '11', name: '체류기간' },
+    { key: '12', name: '신청일자' },
+    { key: '13', name: '진행상태' }
+    ].map(c => ({ ...c, ...defaultColumnProperties }));
   
   const rows = [
-    { id: 0, 1: "3", 2: "출산장려금", 3: "2020-04-13", 4: "2020-04-13", 5: "2019-10-01", 6: "-", 7: "진행중" },
-    { id: 1, 1: "2", 2: "출산장려금", 3: "2020-04-04", 4: "2020-04-13", 5: "2019-10-01", 6: "", 7: "접수" },
-    { id: 2, 1: "1", 2: "출산장려금", 3: "2020-03-31", 4: "2020-04-13", 5: "2019-10-01", 6: "", 7: "완료" }
-  ];
+    { id: 0, 1: "3", 2: "부", 3: "홍길동", 4: "-", 5: "2019-10-01", 6: 20012, 7: 5, 8: "2013-02-05", 9: "독일", 10: "F-6-2", 11: "2022-02-22", 12: "2019-02-22", 13: "완료" },
+    { id: 1, 1: "3", 2: "부", 3: "홍길동", 4: "-", 5: "2019-10-01", 6: 20012, 7: 5, 8: "2013-02-05", 9: "독일", 10: "F-6-2", 11: "2022-02-22", 12: "2019-02-22", 13: "완료" },
+    { id: 2, 1: "3", 2: "부", 3: "홍길동", 4: "-", 5: "2019-10-01", 6: 20012, 7: 5, 8: "2013-02-05", 9: "독일", 10: "F-6-2", 11: "2022-02-22", 12: "2019-02-22", 13: "완료" }
+    ];
   
   const fileInfo = {
     name: 'file',
@@ -206,7 +212,7 @@ const GridSample = ({form}) => {
             </Row>
           </Form>
 
-          <h3>출산장려금 신청목록</h3>
+          <h3>직장피부양자 자격신고 내역</h3>
           <HIRAGrid
             columns={columns}
             rows={rows}
@@ -214,64 +220,12 @@ const GridSample = ({form}) => {
             onSetGrid={handleSetGrid}
           />
 
-          <h3 className="mt-35">출산장려지원금 신청내역</h3>
+          <h3 className="mt-35">직장피부양자 자격신고</h3>
           <Form {...formItemLayout} className="wrap-form">
             <Row gutter={20}>
               <Col xs={24} md={8}>
-                <Form.Item label="신청구분">
-                  {getFieldDecorator('txtGubun', {
-                    rules: [{ required: true, message: '' }],
-                  })(
-                    <Select
-                      defaultValue="1"
-                      placeholder="전체"
-                    >
-                      <Select.Option value="1">전체</Select.Option>
-                      <Select.Option value="2">접수</Select.Option>
-                      <Select.Option value="3">진행중</Select.Option>
-                      <Select.Option value="4">완료</Select.Option>
-                    </Select>,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="해지일자">
-                  {getFieldDecorator('txtDate1', {
-                    rules: [{ required: false, message: '' }],
-                  })(
-                    <DatePicker onChange={onChgDate} />,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="신청일자">
-                  {getFieldDecorator('txtDate2', {
-                    rules: [{ required: false, message: '' }],
-                  })(
-                    <DatePicker onChange={onChgDate} />,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="진행상태">
-                  {getFieldDecorator('txtStatus', {
-                    rules: [{ required: false, message: '' }],
-                  })(
-                    <Select
-                      defaultValue="1"
-                      placeholder="전체"
-                    >
-                      <Select.Option value="1">전체</Select.Option>
-                      <Select.Option value="2">접수</Select.Option>
-                      <Select.Option value="3">진행중</Select.Option>
-                      <Select.Option value="4">완료</Select.Option>
-                    </Select>,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="단축근무신청여부">
-                  {getFieldDecorator('txtReqWork', {
+                <Form.Item label="성명">
+                  {getFieldDecorator('name', {
                     rules: [{ required: false, message: '' }],
                   })(
                     <Input defaultValue="" />,
@@ -279,77 +233,207 @@ const GridSample = ({form}) => {
                 </Form.Item>
               </Col>
               <Col xs={24} md={8}>
-                <Form.Item label="승인일자">
-                  {getFieldDecorator('txtDate3', {
+                <Form.Item label="부서명">
+                  {getFieldDecorator('dept', {
                     rules: [{ required: false, message: '' }],
                   })(
-                    <DatePicker onChange={onChgDate} />,
+                    <Input defaultValue="" />,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24} md={8}>
-                <Form.Item label="태아구분">
-                  {getFieldDecorator('txtTheme', {
+                <Form.Item label="진행상태">
+                  {getFieldDecorator('status', {
                     rules: [{ required: false, message: '' }],
                   })(
-                    <Radio.Group>
-                      <Radio value="a">일태아</Radio>
-                      <Radio value="b">다태아</Radio>
-                    </Radio.Group>,
+                    <Select
+                      defaultValue="1"
+                      placeholder="전체"
+                    >
+                      <Select.Option value="1">전체</Select.Option>
+                      <Select.Option value="2">접수</Select.Option>
+                      <Select.Option value="3">진행중</Select.Option>
+                      <Select.Option value="4">완료</Select.Option>
+                    </Select>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="신청구분">
+                  {getFieldDecorator('reqGubun', {
+                    rules: [{ required: true, message: '' }],
+                  })(
+                    <Select
+                      // onChange={this.handleSelectChange}
+                      defaultValue="1"
+                      placeholder="전체"
+                    >
+                      <Select.Option value="1">전체</Select.Option>
+                      <Select.Option value="2">접수</Select.Option>
+                      <Select.Option value="3">진행중</Select.Option>
+                      <Select.Option value="4">완료</Select.Option>
+                    </Select>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="관계">
+                  {getFieldDecorator('relation', {
+                    rules: [{ required: true, message: '' }],
+                  })(
+                    <Select
+                      defaultValue="1"
+                      placeholder="전체"
+                    >
+                      <Select.Option value="1">전체</Select.Option>
+                      <Select.Option value="2">접수</Select.Option>
+                      <Select.Option value="3">진행중</Select.Option>
+                      <Select.Option value="4">완료</Select.Option>
+                    </Select>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="가족성명">
+                  {getFieldDecorator('familyName', {
+                    rules: [{ required: true, message: '' }],
+                  })(
+                    <Input defaultValue="" />,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="장애 및 유공자 여부">
+                  {getFieldDecorator('gubun', {
+                    rules: [{ required: false, message: '' }],
+                  })(
+                    <Select
+                      defaultValue="1"
+                      placeholder="전체"
+                    >
+                      <Select.Option value="1">전체</Select.Option>
+                      <Select.Option value="2">접수</Select.Option>
+                      <Select.Option value="3">진행중</Select.Option>
+                      <Select.Option value="4">완료</Select.Option>
+                    </Select>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="종별부호/등급">
+                  {getFieldDecorator('grade', {
+                    rules: [{ required: false, message: '' }],
+                  })(
+                    <Row gutter={8}>
+                      <Col span={12}>
+                        <Select
+                          defaultValue=""
+                          placeholder=""
+                        >
+                          <Select.Option value="1">전체</Select.Option>
+                          <Select.Option value="2">접수</Select.Option>
+                          <Select.Option value="3">진행중</Select.Option>
+                          <Select.Option value="4">완료</Select.Option>
+                        </Select>
+                      </Col>
+                      <Col span={12}>
+                        <Select
+                          defaultValue=""
+                          placeholder=""
+                        >
+                          <Select.Option value="1">전체</Select.Option>
+                          <Select.Option value="2">접수</Select.Option>
+                          <Select.Option value="3">진행중</Select.Option>
+                          <Select.Option value="4">완료</Select.Option>
+                        </Select>
+                      </Col>
+                    </Row>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="등록일">
+                  {getFieldDecorator('regDate', {
+                    rules: [{ required: false, message: '' }],
+                  })(
+                    <DatePicker />,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="외국인여부">
+                  {getFieldDecorator('foreigner', {
+                    rules: [{ required: false, message: '' }],
+                  })(
+                    <Select
+                      defaultValue=""
+                      placeholder=""
+                    >
+                      <Select.Option value="1">Y</Select.Option>
+                      <Select.Option value="2">N</Select.Option>
+                    </Select>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="국적">
+                  {getFieldDecorator('nation', {
+                    rules: [{ required: false, message: '' }],
+                  })(
+                    <Select
+                      defaultValue=""
+                      placeholder=""
+                    >
+                      <Select.Option value="1">Y</Select.Option>
+                      <Select.Option value="2">N</Select.Option>
+                    </Select>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="체류자격/기간">
+                  {getFieldDecorator('term', {
+                    rules: [{ required: false, message: '' }],
+                  })(
+                    <Row gutter={8}>
+                      <Col span={12}>
+                        <Input defaultValue="" />
+                      </Col>
+                      <Col span={12}>
+                        <Input defaultValue="" />
+                      </Col>
+                    </Row>,
+                  )}
+                </Form.Item>
+              </Col>
+              <Col xs={24} md={8}>
+                <Form.Item label="신청일자/취득(상실)일">
+                  {getFieldDecorator('accept', {
+                    rules: [{ required: true, message: '' }],
+                  })(
+                    <Row gutter={8}>
+                      <Col span={12}>
+                        <DatePicker  />
+                      </Col>
+                      <Col span={12}>
+                        <DatePicker  />
+                      </Col>
+                    </Row>,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24} md={16}>
-                <Form.Item label="임산부 편의용품신청여부" {...TwoItemLayout}>
-                  {getFieldDecorator('txtOffice', {
+                <Form.Item label="승인일자" {...TwoItemLayout}>
+                  {getFieldDecorator('confirm', {
                     rules: [{ required: false, message: '' }],
                   })(
-                    <Radio.Group>
-                      <Radio value="Y">Y</Radio>
-                      <Radio value="N">N</Radio>
-                    </Radio.Group>,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="출산예정일">
-                  {getFieldDecorator('txtDate4', {
-                    rules: [{ required: true, message: '' }],
-                  })(
-                    <DatePicker onChange={onChgDate} />,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="기준일자(12주)">
-                  {getFieldDecorator('txtDate5', {
-                    rules: [{ required: false, message: '' }],
-                  })(
-                    <DatePicker onChange={onChgDate} />,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24} md={8}>
-                <Form.Item label="기준일자(36주)">
-                  {getFieldDecorator('txtDate6', {
-                    rules: [{ required: false, message: '' }],
-                  })(
-                    <DatePicker onChange={onChgDate} />,
-                  )}
-                </Form.Item>
-              </Col>
-              <Col xs={24}>
-                <Form.Item label="변경 및 해지사유" {...OneItemLayout} className="one-item">
-                  {getFieldDecorator('txtReason', {
-                    rules: [{ required: false, message: '' }],
-                  })(
-                    <Input.TextArea placeholder="변경 및 해지사유를 입력해주세요." autoSize />,
+                    <DatePicker  />,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24}>
                 <Form.Item label="반려사유" {...OneItemLayout} className="one-item">
-                  {getFieldDecorator('txtReason2', {
+                  {getFieldDecorator('denine', {
                     rules: [{ required: false, message: '' }],
                   })(
                     <Input.TextArea placeholder="반려사유를 입력해주세요." autoSize />,
@@ -358,15 +442,14 @@ const GridSample = ({form}) => {
               </Col>
               <Col xs={24}>
                 <Form.Item label="첨부파일" {...OneItemLayout} className="one-item">
-                  {getFieldDecorator('txtFile', {
+                  {getFieldDecorator('filenifo', {
                     rules: [{ required: false, message: '' }],
                   })(
-                    <Upload.Dragger {...fileInfo} className="d-block mt-5">
+                    <Upload.Dragger className="d-block mt-5">
                       <p className="ant-upload-drag-icon">
                         <Icon type="inbox" /> 파일을 마우스로 끌어놓으세요.
                       </p>
-                      <p className="ant-upload-text">제출서류 : 출산 전 진료비 지원 신청 및 임신확인서, 임신진단서 등</p>
-                      <p className="ant-upload-hint">※ 위 서류를 스캔한 파일(pdf, jpg, bmp, hwp 형식)을 첨부하시기 바랍니다.</p>
+                      <p className="ant-upload-hint">※ 가족관계증명서 필수 첨부(주민등록번호 전체 표시)</p>
                     </Upload.Dragger>,
                   )}
                 </Form.Item>
@@ -394,4 +477,4 @@ const GridSample = ({form}) => {
   );
 }
 
-export default (Form.create()(GridSample));
+export default (Form.create()(GridSample2));

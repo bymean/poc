@@ -295,6 +295,12 @@ const BoardSample = ({form}) => {
           <Menu.Item key="6">
             <Link to="/sampleGrid">
               <Icon type="video-camera" />
+              <span>출산장려금 신청목록</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="7">
+            <Link to="/sampleGrid2">
+              <Icon type="video-camera" />
               <span>자격신고내역</span>
             </Link>
           </Menu.Item>
