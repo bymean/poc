@@ -50,7 +50,7 @@ const BoardSample = ({form}) => {
 
   const axiosConfig = {
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+      'Content-Type': 'application/json charset=UTF-8'
     }
   };
 
@@ -123,10 +123,10 @@ const BoardSample = ({form}) => {
 
   const columns = [
     { 
-      key: 'RN', 
-      name: 'No', 
+      key: 'no', 
+      name: 'no', 
       formatter: cell => {
-        return <p className="text-center">{`${cell.row.RN}`}</p>;
+        return <p className="text-center">{`${cell.row.no}`}</p>;
       },
       width:100
     },
@@ -136,23 +136,23 @@ const BoardSample = ({form}) => {
       width:0
     },
     {
-      key: 'SUBJECT', 
+      key: 'relNm', 
       name: '제목',
       width: '50%'
     },
     { 
-      key: 'WRITER', 
+      key: 'famNm', 
       name: '작성자 ',
       formatter: cell => {
-        return <p className="text-center">{`${cell.row.WRITER}`}</p>;
+        return <p className="text-center">{`${cell.row.famNm}`}</p>;
       },
       width:200
     },
     { 
-      key: 'WRITE_DATE', 
+      key: 'regDt', 
       name: '작성일자',
       formatter: cell => {
-        return <p className="text-center">{`${cell.row.WRITE_DATE}`}</p>;
+        return <p className="text-center">{`${cell.row.regDt}`}</p>;
       },
       width:150
     }
@@ -188,7 +188,9 @@ const BoardSample = ({form}) => {
 
       const params = 'menuId=933&bsIdx=8&page=1&bcIdx=0&searchCondition=SUBJECT&searchKeyword=' + parmKeyword + '&categoryAllYn=Y';
 
-      const res = await axios.post('http://tw.ubstory.co.kr/bbs/ajax/boardList.do', params, axiosConfig)
+      //const res = await axios.post('http://tw.ubstory.co.kr/bbs/ajax/boardList.do', params, axiosConfig)
+      //const res = await axios.post('http://localhost:8080/poc/singoList.do', {params:{aa:'1',bb:'2'}}, axiosConfig)
+      const res = await axios.post('http://localhost:8080/poc/singoList.do', '', axiosConfig)
       // const res = await axios.post('http://eplatapi.ubstory.co.kr:8080/bbs/ajax/boardListTest.do', form, axiosConfig)
       .then(res => res)
       .catch(function (error) {
@@ -197,8 +199,10 @@ const BoardSample = ({form}) => {
 
       if (res) {
         const {resultList} = res.data;
-        // setGridData(boardList);
+        //setGridData(boardList);
         const data = resultList;
+
+        //alert(data);
         
         // if (data && data.length > 0) {
         //   let no = 1;
@@ -289,7 +293,7 @@ const BoardSample = ({form}) => {
           <Menu.Item key="5">
             <Link to="/sampleBoard">
               <Icon type="user" />
-              <span>게시판</span>
+              <span>클라우드 POC</span>
             </Link>
           </Menu.Item>
           <Menu.Item key="6">
@@ -335,7 +339,16 @@ const BoardSample = ({form}) => {
           </div>
         </Layout.Header>
         <Layout.Content className="contents">
-          <SearchForm setTransForm={form => setSearchForm(form)} searchBtnClick={getList} />
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/>
+        
+          {/* <SearchForm setTransForm={form => setSearchForm(form)} searchBtnClick={getList} />
           <h3>게시판 목록</h3>
           <Spin spinning={false} isClass={false}>
           <HIRAGrid
@@ -387,7 +400,7 @@ const BoardSample = ({form}) => {
               </Col>
             </Row>
           </Form>
-          </Spin>
+          </Spin> */}
         </Layout.Content>
         <Footer/>
       </Layout>

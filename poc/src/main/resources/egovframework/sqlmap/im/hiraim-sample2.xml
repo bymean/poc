@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="imSample">
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="hiraMap" type="java.util.LinkedHashMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+
+	<resultMap id="sample" class="egovframework.example.sample.service.SampleVO">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="description" column="description"/>
+		<result property="useYn" column="use_yn"/>
+		<result property="regUser" column="reg_user"/>
+	</resultMap>	
+
+			
+
+	
+	<select id="sampleDAO.singoList" parameterClass="egovMap" resultClass="egovMap">
+			<![CDATA[
+			SELECT 
+				"NO", 
+				"REL_NM", 
+				"FAM_NM", 
+				"APL_TP_NM", 
+				"DEL_DD", 
+				"TYPE_CODE", 
+				"GRD", 
+				"REG_DT", 
+				"NAT_NM", 
+				"STY_ALLOW_NM", 
+				"STY_DT", 
+				"APL_DT", 
+				"PRG_STAT_NM"
+			FROM public."TBBJF160"
+			WHERE 1=1
+			]]>  
+		<isNotEmpty property="gubun">
+			<!-- <isNotEqual property="gubun" compareValue="und"> --> 
+		<![CDATA[
+			AND "APL_TP_NM" = #gubun#
+			]]>  
+			<!-- </isNotEqual> -->
+		</isNotEmpty>
+		<isNotEmpty  property="status">
+			<!-- <isNotEqual property="status" compareValue="und"> --> 
+		<![CDATA[
+			AND "PRG_STAT_NM" = #status#
+			]]>
+			<!-- </isNotEqual> -->  
+		</isNotEmpty>
+		<isNotEmpty  property="username">
+			<!-- <isNotEqual property="username" compareValue="und"> --> 
+		<![CDATA[
+			AND "FAM_NM" = #username#
+			]]>  
+			<!-- </isNotEqual> -->
+		</isNotEmpty>
+			
+	</select>
+	
+	
+	
+	
+	
+	<update id="sampleDAO.singoUpdate" parameterClass="egovMap">
+			<![CDATA[
+			
+			UPDATE public."TBBJF160"
+			SET
+				"REL_NM"=#relNm#,  
+				"FAM_NM"=#famNm#,
+				"APL_TP_NM"=#aplTpNm#, 
+				"DEL_DD"=#delDd#, 
+				"TYPE_CODE"=#typeCode#, 
+				"GRD"=#grd#, 
+				"REG_DT"=#regDt#, 
+				"NAT_NM"=#natNm#, 
+				"STY_ALLOW_NM"=#styAllowNm#, 
+				"STY_DT"=#styDt#, 
+				"APL_DT"=#aplDt#, 
+				"PRG_STAT_NM"=#prgStatNm#,  
+				"ENO"=#eno#
+			WHERE 
+				"NO"=#no#
+			]]>
+			
+	</update>
+	
+	
+	
+	
+	
+	<insert id="sampleDAO.singoInsert" parameterClass="egovMap">
+			<![CDATA[			 
+			INSERT INTO public."TBBJF160"
+			(			
+			"NO", 
+			"REL_NM", 
+			"FAM_NM", 
+			"APL_TP_NM", 
+			"DEL_DD", 
+			"TYPE_CODE", 
+			"GRD", 
+			"REG_DT", 
+			"NAT_NM", 
+			"STY_ALLOW_NM", 
+			"STY_DT", 
+			"APL_DT", 
+			"PRG_STAT_NM", 
+			"ENO"
+			)
+			VALUES 
+			(
+			(SELECT COALESCE(max(CAST("NO" AS INTEGER)),0)+1 FROM public."TBBJF160"),
+			#relNm#, 
+			#famNm#, 
+			#aplTpNm#, 
+			#delDd#, 
+			#typeCode#, 
+			#grd#, 
+			#regDt#, 
+			#natNm#, 
+			#styAllowNm#, 
+			#styDt#, 
+			#aplDt#, 
+			#prgStatNm#, 
+			#eno#
+			)
+			]]> 	
+	</insert>
+
+</sqlMap>
