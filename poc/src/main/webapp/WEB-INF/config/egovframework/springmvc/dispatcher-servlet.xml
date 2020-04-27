@@ -59,20 +59,6 @@
         </property>
     </bean>
 	<!-- /For Pagination Tag -->
-	
-	<!-- RequestMappingHandlerMapping, RequestMappingHandlerAdapter 클래스를 빈으로 등록해줌 -->
-    <mvc:annotation-driven >
-    	<mvc:message-converters>
-    		<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
-    	</mvc:message-converters>
-    </mvc:annotation-driven>
-    <!-- This tag allows for mapping the DispatcherServlet to "/" 이거 없으면 컨트롤러가 있어도 404에러 뜸 -->
-    <mvc:default-servlet-handler />    <!-- Process annotations on registered beans like @Autowired... -->
-    <context:annotation-config/>    
-	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" id="viewResolver" p:order="0"/>
-	<bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" id="jsonView">
-    	<property name="contentType" value="application/json;charset=UTF-8"/>
-	</bean>
 
     <mvc:view-controller path="/cmmn/validator.do" view-name="cmmn/validator"/>
 </beans>
