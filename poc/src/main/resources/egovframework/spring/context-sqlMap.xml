@@ -5,12 +5,15 @@
 	<!-- SqlMap setup for iBATIS Database Layer -->
 	<bean id="sqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
 		<property name="configLocation" value="classpath:/egovframework/sqlmap/example/sql-map-config.xml"/>
-		<property name="dataSource" ref="dataSource"/>
+		<property name="dataSource" ref="hiraim"/>
 	</bean>
 	
 	<bean id="hiraImSqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
-		<property name="configLocation" value="classpath:/egovframework/sqlmap/im/hiraim-sample.xml"/>
+		<!-- <property name="configLocation" value="classpath:/egovframework/sqlmap/im/hiraim-sample.xml"/> -->
+		<!-- <property name="mappingLocations" value="classpath:/egovframework/sqlmap/im/hiraim-sample.xml"/> -->
+		<property name="configLocation" value="classpath:/egovframework/sqlmap/example/sql-map-config.xml"/>
 		<property name="dataSource" ref="hiraim"/>
+		
 	</bean>
 
 </beans>
