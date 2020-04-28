@@ -141,14 +141,14 @@
 			UPDATE public.tbbjf118
 			SET	     "CNCR_DD" = CASE WHEN #cncrDd# = NULL THEN '' ELSE #cncrDd# END
 				   , "ADMT_DD" =  CASE WHEN #admtDd# = NULL THEN '' ELSE #admtDd# END
-				   , "ATO_CNCR_TXT" =  CASE WHEN #atoCncrTxt#  = NULLTHEN '' ELSE #atoCncrTxt#  END
+				   , "ATO_CNCR_TXT" =  CASE WHEN #atoCncrTxt#  = NULL THEN '' ELSE #atoCncrTxt#  END
 				   , "CHG_CHCR_RS_RS_TXT" = CASE WHEN #chgChcrRsRsTxt# = NULL THEN '' ELSE #chgChcrRsRsTxt# END
 				   , "RN_RS_TXT" =  CASE WHEN #rnRsTxt# = NULL THEN '' ELSE  #rnRsTxt#  END
 				   , "APND_DOC_ID" =  CASE WHEN #apndDocId# = NULL THEN '' ELSE #apndDocId# END
 				   , "CHBIR_SPPL_PAYM_YN" =  CASE WHEN #chbirSpplPaymYn# = NULL THEN '' ELSE #chbirSpplPaymYn# END
 				   , "WLFR_APL_PRG_STAT_CD" =  CASE WHEN #wlfrAplPrgStatCd# = NULL THEN '' ELSE #wlfrAplPrgStatCd# END
-				   , "FTUS_TP_CD" =  CASE WHEN #ftusTpCd#  = NULLTHEN '' ELSE #ftusTpCd# END
-				   , "PREG_ISSUE_DD" =  CASE WHEN #pregIssueDd# THEN '' ELSE #pregIssueDd# END
+				   , "FTUS_TP_CD" =  CASE WHEN #ftusTpCd#  = NULL THEN '' ELSE #ftusTpCd# END
+				   , "PREG_ISSUE_DD" =  CASE WHEN #pregIssueDd# =NULL THEN '' ELSE #pregIssueDd# END
 				   , "CHBIR_EPT_DD" =  CASE WHEN #chbirEptDd# = NULL THEN '' ELSE #chbirEptDd# END
 				   , "CHG_ENO" ='20160097'
 				   , "CHG_DT" =NOW()
