@@ -33,13 +33,14 @@ public class HiraimSampleServiceImpl2 extends EgovAbstractServiceImpl implements
 	@Override
 	public int singoSave(EgovMap map) throws Exception {		
 		
-		if(map.get("no")==null || map.get("no")=="")
-		{
-			return hraimSampleDAO2.singoInsert(map);
-		}
-		else
+		if(map.get("no")!=null && !("").equals(map.get("no")))
 		{
 			return hraimSampleDAO2.singoUpdate(map);
+		}
+		else			
+		{
+			return hraimSampleDAO2.singoInsert(map);
+			
 		}
 		
 		
