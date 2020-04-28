@@ -120,7 +120,29 @@ public class HiraimSampleController2 {
 	}
 
 
+	@RequestMapping(value="/podTest.do", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+	@ResponseBody
+	@CrossOrigin
+	public ResponseEntity podTest(@RequestParam Map<String, Object> map) throws Exception {
+		EgovMap param = new  EgovMap();
+		param.put("gubun", map.get("gubun"));
+		param.put("status", map.get("status"));
+		param.put("username", map.get("username"));
+		
+		List<Map> list =  (List<Map>) hiraimSampleService2.singoList(param);
+		try
+		{
+			Thread.sleep(1000);
+		}
+		catch(InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+		JSONObject obj = new JSONObject();
+		obj.put("resultList",list);
+		return new ResponseEntity(obj.toJSONString(),HttpStatus.OK);		
 
+	}
 	
 	
 }
