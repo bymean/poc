@@ -47,9 +47,6 @@ import org.springframework.web.bind.support.SessionStatus;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
 import egovframework.example.sample.service.HiraimSampleService;
-import egovframework.example.sample.service.SampleDefaultVO;
-import egovframework.example.sample.service.SampleVO;
-import egovframework.example.sample.service.Tbbjf118VO;
 
 import egovframework.rte.fdl.cmmn.exception.BaseException;
 import egovframework.rte.fdl.property.EgovPropertyService;
@@ -92,7 +89,8 @@ public class HiraimSampleController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(HiraimSampleService.class);
 
 	private static final ArrayList map = null;
-	
+
+	/*
 	@RequestMapping("/wookTest.do")
 	public java.util.List<?> wookTest(SampleVO sampleVO, @ModelAttribute("searchVO") SampleDefaultVO searchVO, SessionStatus status) throws Exception {
 		//System.out.println(hiraimSampleService.wookTest(sampleVO).get(0).toString());
@@ -100,6 +98,7 @@ public class HiraimSampleController {
 	//	status.setComplete();
 	//	return "forward:/egovSampleList.do";
 	}
+	*/
 	
 	
 	@RequestMapping(value="/sampleGridList.do", method = RequestMethod.POST, produces = "application/json; charset=utf-8")

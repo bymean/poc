@@ -120,7 +120,7 @@ public class HiraimSampleController2 {
 	}
 
 
-	@RequestMapping(value="/podTest.do", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+	@RequestMapping(value="/podTest.do", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
 	@ResponseBody
 	@CrossOrigin
 	public ResponseEntity podTest(@RequestParam Map<String, Object> map) throws Exception {
