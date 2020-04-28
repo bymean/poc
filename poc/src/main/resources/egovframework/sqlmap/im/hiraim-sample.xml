@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="hiraimSample">
+
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="hashMap" type="java.util.HashMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+
+	<resultMap id="sample" class="egovframework.example.sample.service.SampleVO">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="description" column="description"/>
+		<result property="useYn" column="use_yn"/>
+		<result property="regUser" column="reg_user"/>
+	</resultMap>	
+
+			
+
+	
+	<select id="sampleDAO.wookTest" parameterClass="egovMap" resultClass="egovMap">
+	<![CDATA[
+			SELECT ROW_NUMBER() OVER(ORDER BY "ENO","APL_DD","APL_SNO" ASC) AS RN
+			       ,"ENO" AS ENO
+			       , "REG_SNO" AS REG_SNO
+			       , "APL_DD" AS APL_DD
+			       , "APL_SNO" AS APL_SNO
+			       , "APL_AMT" AS APL_AMT
+			       , "CNCR_DD" AS CNCR_DD
+			       , "ADMT_DD" AS ADMT_DD
+			       , TRIM("ATO_CNCR_TXT") AS ATO_CNCR_TXT
+			       , TRIM("CHG_CHCR_RS_RS_TXT") AS CHG_CHCR_RS_RS_TXT			       
+			       , "APND_DOC_ID" AS APND_DOC_ID
+			       , "CHBIR_SPPL_PAYM_YN" AS CHBIR_SPPL_PAYM_YN
+			       , "WLFR_APL_PRG_STAT_CD" AS WLFR_APL_PRG_STAT_CD
+			       , "FTUS_TP_CD" AS FTUS_TP_CD
+			       , "PREG_ISSUE_DD"  AS PREG_ISSUE_DD
+			       , "CHBIR_EPT_DD" CHBIR_EPT_DD
+			       ,'신청' AS APL_TP_NM
+			       ,TRIM("RN_RS_TXT") AS RN_TS_TXT
+				   ,CASE WHEN "WLFR_APL_PRG_STAT_CD" ='10' THEN '저장'
+				         WHEN "WLFR_APL_PRG_STAT_CD" ='11' THEN '신청'
+				         WHEN "WLFR_APL_PRG_STAT_CD" ='20' THEN '승인'
+				         WHEN "WLFR_APL_PRG_STAT_CD" ='29' THEN '반려'
+				         ELSE '' END   AS SNTN_STAT_NM
+			  FROM TBBJF118
+			 WHERE 1=1
+		     ]]>
+			 <isNotEmpty property="searchEno">
+			 <isNotEqual property="searchEno" compareValue="undefined"> 
+			 <![CDATA[
+			  AND "ENO" LIKE CAST(#searchEno# AS TEXT)||'%'
+			   ]]>
+			   </isNotEqual>
+			 </isNotEmpty>
+			 <isNotEmpty property="prsStatCd">
+			 <isNotEqual property="prsStatCd" compareValue="undefined"> 
+			 <![CDATA[
+			  AND  "WLFR_APL_PRG_STAT_CD" LIKE CAST(#prsStatCd# AS TEXT)||'%'
+			   ]]>
+			   </isNotEqual>
+			 </isNotEmpty>
+			  
+			 <isNotEmpty  property="searchEno">
+			 <isNotEqual property="searchEno" compareValue="undefined">
+			 <![CDATA[
+			  AND  "FTUS_TP_CD" LIKE CAST(#gubun# AS TEXT)||'%'
+			  ]]>
+			   </isNotEqual>
+			 </isNotEmpty>
+			 
+	</select>
+
+
+	<select id="sampleDAO.sampleGridDtl" parameterClass="egovMap" resultClass="egovMap">
+			SELECT ROW_NUMBER() OVER(ORDER BY "ENO","APL_DD","APL_SNO" ASC) AS RN
+			       ,TRIM("ENO") AS ENO
+			       , "REG_SNO" AS REG_SNO
+			       , TRIM("APL_DD") AS APL_DD
+			       , "APL_SNO" AS APL_SNO
+			       , "APL_AMT" AS APL_AMT
+			       , TRIM("CNCR_DD") AS CNCR_DD
+			       , TRIM("ADMT_DD") AS ADMT_DD
+			       , TRIM("ATO_CNCR_TXT") AS ATO_CNCR_TXT
+			       , TRIM("CHG_CHCR_RS_RS_TXT") AS CHG_CHCR_RS_RS_TXT			       
+			       , TRIM("APND_DOC_ID") AS APND_DOC_ID
+			       , TRIM("CHBIR_SPPL_PAYM_YN") AS CHBIR_SPPL_PAYM_YN
+			       , TRIM("WLFR_APL_PRG_STAT_CD") AS WLFR_APL_PRG_STAT_CD
+			       , TRIM("FTUS_TP_CD") AS FTUS_TP_CD
+			       , TRIM("PREG_ISSUE_DD")  AS PREG_ISSUE_DD
+			       , TRIM("CHBIR_EPT_DD") CHBIR_EPT_DD
+			       ,'신청' AS APL_TP_NM
+			       ,TRIM("RN_RS_TXT") AS RN_TS_TXT
+				   ,CASE WHEN "WLFR_APL_PRG_STAT_CD" ='10' THEN '저장'
+				         WHEN "WLFR_APL_PRG_STAT_CD" ='11' THEN '신청'
+				         WHEN "WLFR_APL_PRG_STAT_CD" ='20' THEN '승인'
+				         WHEN "WLFR_APL_PRG_STAT_CD" ='29' THEN '반려'
+				         ELSE '' END   AS SNTN_STAT_NM
+			  FROM TBBJF118
+			 WHERE "ENO" =CAST(#eno# AS TEXT) 
+			   AND "REG_SNO" = CAST(#regSno# AS INTEGER)
+	</select>
+	
+	<insert id="sampleDAO.insertTbbjf118Dtl" parameterClass="egovMap" >
+			INSERT INTO public.tbbjf118(
+				   "ENO"
+				   , "REG_SNO"
+				   , "APL_DD"
+				   , "APL_SNO"				   
+				   , "ATO_CNCR_TXT"
+				   , "CHG_CHCR_RS_RS_TXT"
+				   , "RN_RS_TXT"				 
+				   , "CHBIR_SPPL_PAYM_YN"
+				   , "WLFR_APL_PRG_STAT_CD"
+				   , "FTUS_TP_CD"
+				   , "PREG_ISSUE_DD"
+				   , "CHBIR_EPT_DD"
+				   , "REG_ENO"
+				   , "REG_DT"
+				   )
+	               VALUES (
+	               '20160097'
+	               , (select COALESCE(max("REG_SNO"),0)+1 FROM TBBJF118 WHERE  "ENO" = #eno#)
+	               , #aplDd#
+	               , (select COALESCE(max("APL_SNO"),0)+1 FROM TBBJF118 WHERE "APL_DD" = #aplDd# AND "ENO" = #eno#)
+	               , CASE WHEN #atoCncrTxt# = NULL THEN '' ELSE #atoCncrTxt# END
+	               , CASE WHEN #chgChcrRsRsTxt# = NULL THEN '' ELSE #chgChcrRsRsTxt#  END 
+	               , CASE WHEN #rnRsTxt# = NULL THEN '' ELSE  #rnRsTxt#  END
+	               , CASE WHEN #chbirSpplPaymYn# = NULL THEN '' ELSE  #chbirSpplPaymYn#  END
+	               , '10'
+	               , CASE WHEN #ftusTpCd# = NULL THEN '' ELSE #ftusTpCd#  END
+	               , CASE WHEN #chbirEptDd# = NULL THEN '' ELSE  #chbirEptDd# END 
+	               , CASE WHEN #pregIssueDd# = NULL THEN '' ELSE #pregIssueDd# END
+	               , '20160097'
+	               , now()
+	               )
+	</insert>
+	
+	<insert id="sampleDAO.updateTbbjf118Dtl" parameterClass="egovMap" >
+			UPDATE public.tbbjf118
+			SET	     "CNCR_DD" = CASE WHEN #cncrDd# = NULL THEN '' ELSE #cncrDd# END
+				   , "ADMT_DD" =  CASE WHEN #admtDd# = NULL THEN '' ELSE #admtDd# END
+				   , "ATO_CNCR_TXT" =  CASE WHEN #atoCncrTxt#  = NULLTHEN '' ELSE #atoCncrTxt#  END
+				   , "CHG_CHCR_RS_RS_TXT" = CASE WHEN #chgChcrRsRsTxt# = NULL THEN '' ELSE #chgChcrRsRsTxt# END
+				   , "RN_RS_TXT" =  CASE WHEN #rnRsTxt# = NULL THEN '' ELSE  #rnRsTxt#  END
+				   , "APND_DOC_ID" =  CASE WHEN #apndDocId# = NULL THEN '' ELSE #apndDocId# END
+				   , "CHBIR_SPPL_PAYM_YN" =  CASE WHEN #chbirSpplPaymYn# = NULL THEN '' ELSE #chbirSpplPaymYn# END
+				   , "WLFR_APL_PRG_STAT_CD" =  CASE WHEN #wlfrAplPrgStatCd# = NULL THEN '' ELSE #wlfrAplPrgStatCd# END
+				   , "FTUS_TP_CD" =  CASE WHEN #ftusTpCd#  = NULLTHEN '' ELSE #ftusTpCd# END
+				   , "PREG_ISSUE_DD" =  CASE WHEN #pregIssueDd# THEN '' ELSE #pregIssueDd# END
+				   , "CHBIR_EPT_DD" =  CASE WHEN #chbirEptDd# = NULL THEN '' ELSE #chbirEptDd# END
+				   , "CHG_ENO" ='20160097'
+				   , "CHG_DT" =NOW()
+			WHERE "ENO" =#eno#			 
+			  AND "REG_SNO" =  CAST(#regSno# AS INTEGER)
+			  
+	             
+	</insert>
+</sqlMap>
