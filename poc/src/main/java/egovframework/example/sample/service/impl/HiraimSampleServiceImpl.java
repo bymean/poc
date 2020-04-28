@@ -12,8 +12,6 @@ import org.springframework.stereotype.Service;
 import antlr.collections.List;
 import egovframework.example.sample.service.EgovSampleService;
 import egovframework.example.sample.service.HiraimSampleService;
-import egovframework.example.sample.service.SampleDefaultVO;
-import egovframework.example.sample.service.SampleVO;
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import egovframework.rte.fdl.idgnr.EgovIdGnrService;
 import egovframework.rte.psl.dataaccess.util.EgovMap;

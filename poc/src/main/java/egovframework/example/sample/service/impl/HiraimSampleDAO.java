@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import egovframework.example.sample.service.HiraimSampleService;
-import egovframework.example.sample.service.SampleVO;
 import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
 import egovframework.rte.psl.dataaccess.util.EgovMap;
 
