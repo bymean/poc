@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "3.25.1",
     "axios": "^0.19.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-data-grid": "7.0.0-canary.14",
     "react-data-grid-addons": "5.0.4-2",
